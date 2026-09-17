@@ -1,0 +1,36 @@
+{
+  "title": "Screenshot_20260115_113855_Camera.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1768457341",
+    "formatted": "Jan 15, 2026, 6:09:01 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1768457336",
+    "formatted": "Jan 15, 2026, 6:08:56 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Arya"
+  }],
+  "archived": true,
+  "url": "https://photos.google.com/photo/AF1QipO6th_Z1xuI48MbvhPawBijWmgL6yEPEQ2J9l-v",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.android.systemui"
+  }
+}

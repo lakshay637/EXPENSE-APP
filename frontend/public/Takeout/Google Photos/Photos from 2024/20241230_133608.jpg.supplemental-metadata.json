@@ -1,0 +1,35 @@
+{
+  "title": "20241230_133608.jpg",
+  "description": "",
+  "imageViews": "13",
+  "creationTime": {
+    "timestamp": "1735621997",
+    "formatted": "Dec 31, 2024, 5:13:17 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1735545968",
+    "formatted": "Dec 30, 2024, 8:06:08 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPcOtIGm5E5GdV3HH3SlT3M0N8KPyPFNYn77Rr8",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

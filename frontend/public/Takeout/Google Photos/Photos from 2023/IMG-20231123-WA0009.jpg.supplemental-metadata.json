@@ -1,0 +1,32 @@
+{
+  "title": "IMG-20231123-WA0009.jpg",
+  "description": "",
+  "imageViews": "5",
+  "creationTime": {
+    "timestamp": "1712037617",
+    "formatted": "Apr 2, 2024, 6:00:17 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1700712548",
+    "formatted": "Nov 23, 2023, 4:09:08 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Patidev"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipOKqS3DqDDBoq_LlfXik3_upIQbU8QjFn-Yudk-",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

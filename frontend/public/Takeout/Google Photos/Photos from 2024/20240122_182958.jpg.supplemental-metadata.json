@@ -1,0 +1,29 @@
+{
+  "title": "20240122_182958.jpg",
+  "description": "",
+  "imageViews": "6",
+  "creationTime": {
+    "timestamp": "1706497110",
+    "formatted": "Jan 29, 2024, 2:58:30 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1705928399",
+    "formatted": "Jan 22, 2024, 12:59:59 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipP5omGsIRcIsgZGrwXRNKk-Yv1i-6_Y84bW7JaJ",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

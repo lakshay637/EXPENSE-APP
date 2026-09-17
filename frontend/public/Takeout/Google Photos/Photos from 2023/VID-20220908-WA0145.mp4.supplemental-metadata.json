@@ -1,0 +1,31 @@
+{
+  "title": "VID-20220908-WA0145.mp4",
+  "description": "",
+  "imageViews": "24",
+  "creationTime": {
+    "timestamp": "1699891521",
+    "formatted": "Nov 13, 2023, 4:05:21 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1699891517",
+    "formatted": "Nov 13, 2023, 4:05:17 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Shipra"
+  }, {
+    "name": "Mausi"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPLtCUspjHV4viXl-rq05V5qsR4kChSnBzm637J",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

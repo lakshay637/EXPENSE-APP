@@ -1,0 +1,29 @@
+{
+  "title": "VID-20230503-WA0037.mp4",
+  "description": "",
+  "imageViews": "14",
+  "creationTime": {
+    "timestamp": "1699891338",
+    "formatted": "Nov 13, 2023, 4:02:18 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1699891334",
+    "formatted": "Nov 13, 2023, 4:02:14 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Anaya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipOMeO1zSa9tjP9XCYRIGVSgY-_zt65AHvmzHn7H",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

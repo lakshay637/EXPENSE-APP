@@ -1,0 +1,32 @@
+{
+  "title": "Assassin_2024-09-07-19-28-34.jpg",
+  "description": "",
+  "imageViews": "9",
+  "creationTime": {
+    "timestamp": "1725801672",
+    "formatted": "Sep 8, 2024, 1:21:12 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1725717514",
+    "formatted": "Sep 7, 2024, 1:58:34 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipOyZaNJZgl3N1Rz4NIcdQ7GcwfbSTkfvZFZvTtp",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.samsung.android.game.gametools"
+  }
+}

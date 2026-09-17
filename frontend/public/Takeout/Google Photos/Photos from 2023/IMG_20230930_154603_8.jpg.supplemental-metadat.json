@@ -1,0 +1,29 @@
+{
+  "title": "IMG_20230930_154603_8.jpg",
+  "description": "",
+  "imageViews": "29",
+  "creationTime": {
+    "timestamp": "1699888223",
+    "formatted": "Nov 13, 2023, 3:10:23 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1699888221",
+    "formatted": "Nov 13, 2023, 3:10:21 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPmLbXkBnYi1t_kP2vvHwz_7bEoOD_4VHa3zB_9",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

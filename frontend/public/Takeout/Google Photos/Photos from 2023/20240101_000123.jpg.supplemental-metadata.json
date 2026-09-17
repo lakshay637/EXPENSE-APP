@@ -1,0 +1,34 @@
+{
+  "title": "20240101_000123.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1704221025",
+    "formatted": "Jan 2, 2024, 6:43:45 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1704047483",
+    "formatted": "Dec 31, 2023, 6:31:23 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Patidev"
+  }, {
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNRPp_Ep99EARVCGDAWqqVK0GqmdtUA5o8rSp-9",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

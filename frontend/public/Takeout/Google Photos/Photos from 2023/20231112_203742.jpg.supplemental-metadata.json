@@ -1,0 +1,29 @@
+{
+  "title": "20231112_203742.jpg",
+  "description": "",
+  "imageViews": "6",
+  "creationTime": {
+    "timestamp": "1699888674",
+    "formatted": "Nov 13, 2023, 3:17:54 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1699801663",
+    "formatted": "Nov 12, 2023, 3:07:43 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipPUF4CAMeJzsiQZHGZE7l3234950S3h0nRG6egp",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

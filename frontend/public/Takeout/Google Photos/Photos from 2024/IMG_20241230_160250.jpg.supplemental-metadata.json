@@ -1,0 +1,35 @@
+{
+  "title": "IMG_20241230_160250.jpg",
+  "description": "",
+  "imageViews": "8",
+  "creationTime": {
+    "timestamp": "1751650831",
+    "formatted": "Jul 4, 2025, 5:40:31 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1735554770",
+    "formatted": "Dec 30, 2024, 10:32:50 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipO-80dZXO2RlQuL743vZ_esfXy4nun5IslljyAu",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.whatsapp"
+  }
+}

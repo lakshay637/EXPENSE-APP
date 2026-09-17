@@ -1,0 +1,32 @@
+{
+  "title": "20241025_105036.mp4",
+  "description": "",
+  "imageViews": "26",
+  "creationTime": {
+    "timestamp": "1729840322",
+    "formatted": "Oct 25, 2024, 7:12:02 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1729833638",
+    "formatted": "Oct 25, 2024, 5:20:38 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipM_dtk5lnHMFxoH6aTy2ViFmu1UkWRzs6YfB4Hl",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

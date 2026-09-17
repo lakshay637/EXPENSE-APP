@@ -1,0 +1,32 @@
+{
+  "title": "Car Race Master_2024-10-18-18-40-45.jpg",
+  "description": "",
+  "imageViews": "7",
+  "creationTime": {
+    "timestamp": "1729258353",
+    "formatted": "Oct 18, 2024, 1:32:33 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1729257045",
+    "formatted": "Oct 18, 2024, 1:10:45 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipM_T392rTv1Y2d0xsPFPNef67o9sPJhy0yLzFRf",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.samsung.android.game.gametools"
+  }
+}

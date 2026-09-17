@@ -1,0 +1,32 @@
+{
+  "title": "FB_IMG_1720683990408.jpg",
+  "description": "",
+  "imageViews": "4",
+  "creationTime": {
+    "timestamp": "1720684002",
+    "formatted": "Jul 11, 2024, 7:46:42 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1720683990",
+    "formatted": "Jul 11, 2024, 7:46:30 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipPVq9_ozV9LdcVB5J6Zm8V2gOR_iZGohDP3fjDc",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.facebook.katana"
+  }
+}

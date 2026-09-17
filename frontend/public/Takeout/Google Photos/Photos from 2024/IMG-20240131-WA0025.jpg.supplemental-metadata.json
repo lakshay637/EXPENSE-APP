@@ -1,0 +1,34 @@
+{
+  "title": "IMG-20240131-WA0025.jpg",
+  "description": "",
+  "imageViews": "8",
+  "creationTime": {
+    "timestamp": "1712085585",
+    "formatted": "Apr 2, 2024, 7:19:45 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1706678093",
+    "formatted": "Jan 31, 2024, 5:14:53 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Shipra"
+  }, {
+    "name": "Ayush"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPrC5qhwlbbrUDS-kAnk0DDbhhYa0SrbfaPhDkh",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "20240219_074002.jpg",
+  "description": "",
+  "imageViews": "11",
+  "creationTime": {
+    "timestamp": "1708449022",
+    "formatted": "Feb 20, 2024, 5:10:22 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1708308602",
+    "formatted": "Feb 19, 2024, 2:10:02 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipOa5tDoDWeojLoPuSwiJpRl9sIgJrcXDhlWU953",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

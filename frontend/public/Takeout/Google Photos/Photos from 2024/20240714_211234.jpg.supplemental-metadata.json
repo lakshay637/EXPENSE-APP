@@ -1,0 +1,29 @@
+{
+  "title": "20240714_211234.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1721009743",
+    "formatted": "Jul 15, 2024, 2:15:43 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1720971756",
+    "formatted": "Jul 14, 2024, 3:42:36 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipNJClI3SRJnK9LlYNQfsHR9VsCknyaojvXK-VwE",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

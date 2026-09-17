@@ -1,0 +1,32 @@
+{
+  "title": "20240614_105341.jpg",
+  "description": "",
+  "imageViews": "4",
+  "creationTime": {
+    "timestamp": "1718369347",
+    "formatted": "Jun 14, 2024, 12:49:07 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1718342621",
+    "formatted": "Jun 14, 2024, 5:23:41 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Mumy"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipM3cxirz_VlHvWsoQSKHfATg5DOBKGUbFF_3Jao",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

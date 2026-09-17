@@ -1,0 +1,32 @@
+{
+  "title": "IMG20240819153555.jpg",
+  "description": "",
+  "imageViews": "13",
+  "creationTime": {
+    "timestamp": "1724088400",
+    "formatted": "Aug 19, 2024, 5:26:40 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1724061955",
+    "formatted": "Aug 19, 2024, 10:05:55 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPDeXvMczMe8ixsviGz-iStC0f6N19oiewrIMB3",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

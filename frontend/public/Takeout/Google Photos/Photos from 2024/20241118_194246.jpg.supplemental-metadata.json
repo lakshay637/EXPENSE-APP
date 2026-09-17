@@ -1,0 +1,37 @@
+{
+  "title": "20241118_194246.jpg",
+  "description": "",
+  "imageViews": "8",
+  "creationTime": {
+    "timestamp": "1731942208",
+    "formatted": "Nov 18, 2024, 3:03:28 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1731939166",
+    "formatted": "Nov 18, 2024, 2:12:46 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }, {
+    "name": "Patidev"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipP5eCFfIteWrXcXgvltyItI1GCIpmHHJGk0UodE",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

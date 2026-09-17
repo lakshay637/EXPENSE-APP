@@ -1,0 +1,32 @@
+{
+  "title": "IMG-20221210-WA0071.jpg",
+  "description": "",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1767669626",
+    "formatted": "Jan 6, 2026, 3:20:26 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1670786514",
+    "formatted": "Dec 11, 2022, 7:21:54 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Mausi"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNLZJ1wL35mRpvM1k8erPmW_ftg1P353HN6LB6w",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

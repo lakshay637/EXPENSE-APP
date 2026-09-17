@@ -1,0 +1,36 @@
+{
+  "title": "IMG-20220908-WA0114-COLLAGE.jpg",
+  "description": "",
+  "imageViews": "6",
+  "creationTime": {
+    "timestamp": "1706947473",
+    "formatted": "Feb 3, 2024, 8:04:33 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1701267545",
+    "formatted": "Nov 29, 2023, 2:19:05 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Arya"
+  }, {
+    "name": "Neha"
+  }, {
+    "name": "Shivu"
+  }, {
+    "name": "Ayush"
+  }, {
+    "name": "Maanu"
+  }, {
+    "name": "Krishna"
+  }, {
+    "name": "Shipra"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipM2ubGJRG_sjlBPU7Em-QaWFOIQYHdka6zTO_nA"
+}

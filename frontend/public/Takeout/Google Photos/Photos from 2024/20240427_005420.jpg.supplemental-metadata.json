@@ -1,0 +1,29 @@
+{
+  "title": "20240427_005420.jpg",
+  "description": "",
+  "imageViews": "6",
+  "creationTime": {
+    "timestamp": "1714482446",
+    "formatted": "Apr 30, 2024, 1:07:26 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1714159460",
+    "formatted": "Apr 26, 2024, 7:24:20 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipMQOu3ghak5HH03BTKMp6cvMecYTqNgEizobIoq",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "title": "VID-20231211-WA0014.mp4",
+  "description": "",
+  "imageViews": "38",
+  "creationTime": {
+    "timestamp": "1712085624",
+    "formatted": "Apr 2, 2024, 7:20:24 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1702268820",
+    "formatted": "Dec 11, 2023, 4:27:00 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }, {
+    "name": "Patidev"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNYL4ok3XPIthzxSeK48nOlrMXU83bWTdTXmc1R",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

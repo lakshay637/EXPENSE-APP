@@ -1,0 +1,35 @@
+{
+  "title": "20260225_112354.jpg",
+  "description": "",
+  "imageViews": "5",
+  "creationTime": {
+    "timestamp": "1772007869",
+    "formatted": "Feb 25, 2026, 8:24:29 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1771998834",
+    "formatted": "Feb 25, 2026, 5:53:54 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Siddhi"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipOcqcxj941H2sefJU_aQRzqpeZYsK_mPTs-JtNB",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

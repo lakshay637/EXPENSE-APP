@@ -1,0 +1,32 @@
+{
+  "title": "20240112_183321.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1705864203",
+    "formatted": "Jan 21, 2024, 7:10:03 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1705064602",
+    "formatted": "Jan 12, 2024, 1:03:22 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Shivu"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMbTvYf9FW79JEv71o0cUhpBsj9oud7Rmoc5K1Q",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

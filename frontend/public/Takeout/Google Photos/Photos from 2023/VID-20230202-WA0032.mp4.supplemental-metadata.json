@@ -1,0 +1,31 @@
+{
+  "title": "VID-20230202-WA0032.mp4",
+  "description": "",
+  "imageViews": "19",
+  "creationTime": {
+    "timestamp": "1699891387",
+    "formatted": "Nov 13, 2023, 4:03:07 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1699891381",
+    "formatted": "Nov 13, 2023, 4:03:01 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Manu"
+  }, {
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPSzEGh9bM5hmQK4WtrWmtzkgFE_LYuiuz3pVQr",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

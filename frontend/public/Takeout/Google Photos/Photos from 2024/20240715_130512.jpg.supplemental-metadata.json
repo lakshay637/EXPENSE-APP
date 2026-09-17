@@ -1,0 +1,36 @@
+{
+  "title": "20240715_130512.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1721042051",
+    "formatted": "Jul 15, 2024, 11:14:11 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1721028912",
+    "formatted": "Jul 15, 2024, 7:35:12 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }, {
+    "name": "Shivu"
+  }, {
+    "name": "Anaya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipN-jRR4-kwOq2I0d1Cz3VOE3zB-nEmdKWryisWb",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

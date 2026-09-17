@@ -1,0 +1,34 @@
+{
+  "title": "20240129_141922.jpg",
+  "description": "",
+  "imageViews": "9",
+  "creationTime": {
+    "timestamp": "1706634135",
+    "formatted": "Jan 30, 2024, 5:02:15 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1706518162",
+    "formatted": "Jan 29, 2024, 8:49:22 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }, {
+    "name": "Kaashu"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPyemkDyYIRw6ekgAIiLJOVAT8pqR7YsypiXg-N",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

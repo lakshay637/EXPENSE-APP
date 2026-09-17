@@ -1,0 +1,33 @@
+{
+  "title": "Screenshot_20260206_081549_Photos.jpg",
+  "description": "",
+  "imageViews": "2",
+  "creationTime": {
+    "timestamp": "1770345954",
+    "formatted": "Feb 6, 2026, 2:45:54 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1770345949",
+    "formatted": "Feb 6, 2026, 2:45:49 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "archived": true,
+  "url": "https://photos.google.com/photo/AF1QipMgX6NRVbZvcepgB4NL3ZV6NIyrD-rrpBTb8uhk",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.android.systemui"
+  }
+}

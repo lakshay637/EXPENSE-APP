@@ -1,0 +1,32 @@
+{
+  "title": "20240909_110125.jpg",
+  "description": "",
+  "imageViews": "5",
+  "creationTime": {
+    "timestamp": "1725881839",
+    "formatted": "Sep 9, 2024, 11:37:19 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1725859885",
+    "formatted": "Sep 9, 2024, 5:31:25 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipMWhGKCRXzx7AVkpqH_rRSkquyreQr63HeAlVBm",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

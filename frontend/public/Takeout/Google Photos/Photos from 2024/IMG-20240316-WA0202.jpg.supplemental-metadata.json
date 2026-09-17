@@ -1,0 +1,34 @@
+{
+  "title": "IMG-20240316-WA0202.jpg",
+  "description": "",
+  "imageViews": "5",
+  "creationTime": {
+    "timestamp": "1712085604",
+    "formatted": "Apr 2, 2024, 7:20:04 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1710610621",
+    "formatted": "Mar 16, 2024, 5:37:01 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Mom"
+  }, {
+    "name": "Anaya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMjBH6eTzg-Bl57lOoJDEBrpDfpdeEJ54Ic0lfM",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "20240616_151739.jpg",
+  "description": "",
+  "imageViews": "11",
+  "creationTime": {
+    "timestamp": "1718621702",
+    "formatted": "Jun 17, 2024, 10:55:02 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1718531259",
+    "formatted": "Jun 16, 2024, 9:47:39 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Maanu"
+  }, {
+    "name": "Patidev"
+  }, {
+    "name": "Arya"
+  }, {
+    "name": "Siddhi"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNpjPScl98h54-66S_JnM6hQIFDSJ405tc6aZYl",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

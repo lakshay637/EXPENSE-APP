@@ -1,0 +1,35 @@
+{
+  "title": "20241230_153156.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1735622005",
+    "formatted": "Dec 31, 2024, 5:13:25 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1735552916",
+    "formatted": "Dec 30, 2024, 10:01:56 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Siddhi"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMjv7pQJg8HuOtAIhnJPyYiRqOx4v1CmsXJwpXN",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

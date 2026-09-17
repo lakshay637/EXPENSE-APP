@@ -1,0 +1,35 @@
+{
+  "title": "IMG_20260217_184804.jpg",
+  "description": "",
+  "imageViews": "7",
+  "creationTime": {
+    "timestamp": "1771337803",
+    "formatted": "Feb 17, 2026, 2:16:43 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1771334284",
+    "formatted": "Feb 17, 2026, 1:18:04 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Anaya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipOvzF4H0pH-PmViVf2HIxIKKtXYDnnnlW7-GfWk",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "photo.filter.selfie.beauty.camera"
+  }
+}

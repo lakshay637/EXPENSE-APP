@@ -1,0 +1,29 @@
+{
+  "title": "20240226_133939.jpg",
+  "description": "",
+  "imageViews": "2",
+  "creationTime": {
+    "timestamp": "1709004407",
+    "formatted": "Feb 27, 2024, 3:26:47 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1708934979",
+    "formatted": "Feb 26, 2024, 8:09:39 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipPeCF9vDTeAJeBoLH_1SIsKiu6shQiUDZbVmDS0",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

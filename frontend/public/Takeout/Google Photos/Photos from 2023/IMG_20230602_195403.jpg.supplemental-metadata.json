@@ -1,0 +1,32 @@
+{
+  "title": "IMG_20230602_195403.jpg",
+  "description": "",
+  "imageViews": "14",
+  "creationTime": {
+    "timestamp": "1685716184",
+    "formatted": "Jun 2, 2023, 2:29:44 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1685715843",
+    "formatted": "Jun 2, 2023, 2:24:03 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Shivu"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMU2ZErru2Y3bLA-Gx1LNLpJ-MvVFRzvaZovTIK",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

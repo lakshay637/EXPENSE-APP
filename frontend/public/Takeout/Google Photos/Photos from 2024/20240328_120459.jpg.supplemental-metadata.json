@@ -1,0 +1,29 @@
+{
+  "title": "20240328_120459.jpg",
+  "description": "",
+  "imageViews": "16",
+  "creationTime": {
+    "timestamp": "1711878733",
+    "formatted": "Mar 31, 2024, 9:52:13 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1711607699",
+    "formatted": "Mar 28, 2024, 6:34:59 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipOlH6Ny4OIFRBHRfusJBVB6JEDUuIgjYmqMzNYV",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

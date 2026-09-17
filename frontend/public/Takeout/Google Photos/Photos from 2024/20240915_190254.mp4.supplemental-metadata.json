@@ -1,0 +1,35 @@
+{
+  "title": "20240915_190254.mp4",
+  "description": "",
+  "imageViews": "25",
+  "creationTime": {
+    "timestamp": "1726407913",
+    "formatted": "Sep 15, 2024, 1:45:13 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1726407181",
+    "formatted": "Sep 15, 2024, 1:33:01 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Shivu"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMnPvyD7hf4VHFpyjPRJvs0njR6jnmwcudtAlo3",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "title": "IMG20240101160958.jpg",
+  "description": "",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1767669626",
+    "formatted": "Jan 6, 2026, 3:20:26 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1704105598",
+    "formatted": "Jan 1, 2024, 10:39:58 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }, {
+    "name": "Mausi"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNX7PNmfREFzFHJO0E7thhdfaSv7Y346vAv_yNm",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

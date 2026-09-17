@@ -1,0 +1,32 @@
+{
+  "title": "20260220_102427.jpg",
+  "description": "",
+  "imageViews": "7",
+  "creationTime": {
+    "timestamp": "1771563447",
+    "formatted": "Feb 20, 2026, 4:57:27 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1771563268",
+    "formatted": "Feb 20, 2026, 4:54:28 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipOlCW00vcLrctLgeO81nY37aMjUYQHtmyYReNh4",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

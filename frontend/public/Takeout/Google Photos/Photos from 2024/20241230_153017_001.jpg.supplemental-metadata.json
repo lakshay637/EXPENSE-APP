@@ -1,0 +1,32 @@
+{
+  "title": "20241230_153017_001.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1735622001",
+    "formatted": "Dec 31, 2024, 5:13:21 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1735552819",
+    "formatted": "Dec 30, 2024, 10:00:19 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipPoAn57M4Y3Ltwx3QhEHSCcXCLWiNRAq-UzVGF5",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

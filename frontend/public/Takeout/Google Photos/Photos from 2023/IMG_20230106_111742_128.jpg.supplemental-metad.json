@@ -1,0 +1,31 @@
+{
+  "title": "IMG_20230106_111742_128.jpg",
+  "description": "",
+  "imageViews": "17",
+  "creationTime": {
+    "timestamp": "1699890258",
+    "formatted": "Nov 13, 2023, 3:44:18 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1699890256",
+    "formatted": "Nov 13, 2023, 3:44:16 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }, {
+    "name": "Mausi"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMJwkC1NoQHMsTBeGcD4bCDLoKQ0jmbwjP4oK1M",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

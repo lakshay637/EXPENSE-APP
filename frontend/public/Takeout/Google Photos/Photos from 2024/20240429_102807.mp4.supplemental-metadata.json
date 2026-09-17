@@ -1,0 +1,34 @@
+{
+  "title": "20240429_102807.mp4",
+  "description": "",
+  "imageViews": "27",
+  "creationTime": {
+    "timestamp": "1714649175",
+    "formatted": "May 2, 2024, 11:26:15 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1714366719",
+    "formatted": "Apr 29, 2024, 4:58:39 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Anaya"
+  }, {
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPk-BY3ztaLwxObugNKdE7kgv-Orpl1iqsBd8D7",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

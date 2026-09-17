@@ -1,0 +1,26 @@
+{
+  "title": "IMG_20221025_123100_312.jpg",
+  "description": "",
+  "imageViews": "6",
+  "creationTime": {
+    "timestamp": "1699890265",
+    "formatted": "Nov 13, 2023, 3:44:25 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1699890263",
+    "formatted": "Nov 13, 2023, 3:44:23 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipPzwvosEzae70y9GnWBfDXToUaJmP3J-yvCe_Dj",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

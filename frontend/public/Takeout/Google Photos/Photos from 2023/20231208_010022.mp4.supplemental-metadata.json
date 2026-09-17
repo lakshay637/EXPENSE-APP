@@ -1,0 +1,29 @@
+{
+  "title": "20231208_010022.mp4",
+  "description": "",
+  "imageViews": "15",
+  "creationTime": {
+    "timestamp": "1702260617",
+    "formatted": "Dec 11, 2023, 2:10:17 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1701977443",
+    "formatted": "Dec 7, 2023, 7:30:43 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipPMRn2XiFo5A4LmwkB7YrlA1i8eModc6V_se1Gw",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "title": "20241222_140432.mp4",
+  "description": "",
+  "imageViews": "44",
+  "creationTime": {
+    "timestamp": "1734919909",
+    "formatted": "Dec 23, 2024, 2:11:49 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1734856477",
+    "formatted": "Dec 22, 2024, 8:34:37 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Shivu"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipND1WFzYRd5w7u3DTln9uMsEvJ_-6AGFVT1Gv3l",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

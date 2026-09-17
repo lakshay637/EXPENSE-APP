@@ -1,0 +1,29 @@
+{
+  "title": "20240101_154249.mp4",
+  "description": "",
+  "imageViews": "13",
+  "creationTime": {
+    "timestamp": "1704221081",
+    "formatted": "Jan 2, 2024, 6:44:41 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1704104000",
+    "formatted": "Jan 1, 2024, 10:13:20 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipPl2AvFRAFezkY0V4_Gxk-lvRU7r-RDjSD0UG5q",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

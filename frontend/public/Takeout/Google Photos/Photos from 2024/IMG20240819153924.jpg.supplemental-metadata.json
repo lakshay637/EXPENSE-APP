@@ -1,0 +1,34 @@
+{
+  "title": "IMG20240819153924.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1724088424",
+    "formatted": "Aug 19, 2024, 5:27:04 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1724062164",
+    "formatted": "Aug 19, 2024, 10:09:24 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Dhairya"
+  }, {
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNchrecLsYiBZRFzIVvJgiPiNUcsUUHmFINlc-k",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

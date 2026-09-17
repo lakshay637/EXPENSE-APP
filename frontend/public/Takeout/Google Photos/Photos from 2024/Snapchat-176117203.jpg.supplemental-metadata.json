@@ -1,0 +1,32 @@
+{
+  "title": "Snapchat-176117203.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1705864239",
+    "formatted": "Jan 21, 2024, 7:10:39 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1705857751",
+    "formatted": "Jan 21, 2024, 5:22:31 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipOLO-Z8hFB9l_kmpG8v_vqvY7SJki3QO_WyG-QA",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

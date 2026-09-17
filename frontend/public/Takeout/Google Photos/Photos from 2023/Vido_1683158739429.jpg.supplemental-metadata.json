@@ -1,0 +1,32 @@
+{
+  "title": "Vido_1683158739429.jpg",
+  "description": "",
+  "imageViews": "32",
+  "creationTime": {
+    "timestamp": "1683158767",
+    "formatted": "May 4, 2023, 12:06:07 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1683158739",
+    "formatted": "May 4, 2023, 12:05:39 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Patidev"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPB2LEEgSch7BRph_VVMjUqNJnAIORNCw5fXeV-",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

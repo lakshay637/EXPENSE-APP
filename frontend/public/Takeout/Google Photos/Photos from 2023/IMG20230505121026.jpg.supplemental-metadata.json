@@ -1,0 +1,29 @@
+{
+  "title": "IMG20230505121026.jpg",
+  "description": "",
+  "imageViews": "9",
+  "creationTime": {
+    "timestamp": "1683268848",
+    "formatted": "May 5, 2023, 6:40:48 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1683268826",
+    "formatted": "May 5, 2023, 6:40:26 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipPhVmC3XWZfRv8lIR7PRVtUJ00FnF31YaudNpP6",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

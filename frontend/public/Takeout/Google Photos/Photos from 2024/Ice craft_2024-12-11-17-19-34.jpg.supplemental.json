@@ -1,0 +1,32 @@
+{
+  "title": "Ice craft_2024-12-11-17-19-34.jpg",
+  "description": "",
+  "imageViews": "7",
+  "creationTime": {
+    "timestamp": "1733976350",
+    "formatted": "Dec 12, 2024, 4:05:50 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1733917776",
+    "formatted": "Dec 11, 2024, 11:49:36 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipPPYK0pBXnPdGZ__ALBzb3KfWRGTxgO-sg243Ak",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.samsung.android.game.gametools"
+  }
+}

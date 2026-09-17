@@ -1,0 +1,34 @@
+{
+  "title": "20240121_213831.jpg",
+  "description": "",
+  "imageViews": "6",
+  "creationTime": {
+    "timestamp": "1705864228",
+    "formatted": "Jan 21, 2024, 7:10:28 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1705853312",
+    "formatted": "Jan 21, 2024, 4:08:32 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Kaashu"
+  }, {
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipOso77x0O2TDzmTN5-wu56Hm5h9DtTFE1yReq8x",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

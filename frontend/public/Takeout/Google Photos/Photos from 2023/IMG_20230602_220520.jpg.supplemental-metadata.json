@@ -1,0 +1,34 @@
+{
+  "title": "IMG_20230602_220520.jpg",
+  "description": "",
+  "imageViews": "30",
+  "creationTime": {
+    "timestamp": "1685733606",
+    "formatted": "Jun 2, 2023, 7:20:06 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1685723720",
+    "formatted": "Jun 2, 2023, 4:35:20 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Mausi"
+  }, {
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMUNZqspLabvY8hhTk7sxbasGcJL2ugZ8SUg_iO",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

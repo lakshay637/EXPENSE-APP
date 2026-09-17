@@ -1,0 +1,32 @@
+{
+  "title": "Indian Bikes Driving 3D_2024-11-01-15-05-53.jpg",
+  "description": "",
+  "imageViews": "6",
+  "creationTime": {
+    "timestamp": "1730477281",
+    "formatted": "Nov 1, 2024, 4:08:01 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1730453754",
+    "formatted": "Nov 1, 2024, 9:35:54 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipNMAQcWrzN9EKuqhgHbzrsoPP9f6OFsZSS4i2wN",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.samsung.android.game.gametools"
+  }
+}

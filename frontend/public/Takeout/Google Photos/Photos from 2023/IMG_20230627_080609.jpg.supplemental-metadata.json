@@ -1,0 +1,29 @@
+{
+  "title": "IMG_20230627_080609.jpg",
+  "description": "",
+  "imageViews": "8",
+  "creationTime": {
+    "timestamp": "1687867027",
+    "formatted": "Jun 27, 2023, 11:57:07 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1687833370",
+    "formatted": "Jun 27, 2023, 2:36:10 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipM8i8--cwFGvgEiNTCdohLrdRAmzLrggEW7un66",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

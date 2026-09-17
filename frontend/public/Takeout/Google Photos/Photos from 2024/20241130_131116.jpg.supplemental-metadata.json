@@ -1,0 +1,32 @@
+{
+  "title": "20241130_131116.jpg",
+  "description": "",
+  "imageViews": "4",
+  "creationTime": {
+    "timestamp": "1732952485",
+    "formatted": "Nov 30, 2024, 7:41:25 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1732952476",
+    "formatted": "Nov 30, 2024, 7:41:16 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipOAxjFP0iIBzF7dv23bSf0v9BFfBxJ4nplXlKDK",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

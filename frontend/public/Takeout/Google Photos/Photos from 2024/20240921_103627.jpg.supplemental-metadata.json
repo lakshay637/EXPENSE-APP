@@ -1,0 +1,35 @@
+{
+  "title": "20240921_103627.jpg",
+  "description": "",
+  "imageViews": "6",
+  "creationTime": {
+    "timestamp": "1726914838",
+    "formatted": "Sep 21, 2024, 10:33:58 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1726895187",
+    "formatted": "Sep 21, 2024, 5:06:27 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNp97T6A5TlyHJyo7rdfSx2a7Rpq8PoPst7FE1M",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

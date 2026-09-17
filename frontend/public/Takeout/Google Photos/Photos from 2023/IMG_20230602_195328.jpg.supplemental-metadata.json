@@ -1,0 +1,32 @@
+{
+  "title": "IMG_20230602_195328.jpg",
+  "description": "",
+  "imageViews": "19",
+  "creationTime": {
+    "timestamp": "1685715833",
+    "formatted": "Jun 2, 2023, 2:23:53 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1685715808",
+    "formatted": "Jun 2, 2023, 2:23:28 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipOuGwncqWFjYsLSJ8QiIIlIml05cZMGV3ZDhmP5",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

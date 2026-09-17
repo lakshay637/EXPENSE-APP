@@ -1,0 +1,39 @@
+{
+  "title": "VID20231101140659.mp4",
+  "description": "",
+  "imageViews": "44",
+  "creationTime": {
+    "timestamp": "1699890332",
+    "formatted": "Nov 13, 2023, 3:45:32 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1698827837",
+    "formatted": "Nov 1, 2023, 8:37:17 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNJ5FiAEXTnGzqnTdJc2pIqJcHKpJaCJzRRUQhn",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

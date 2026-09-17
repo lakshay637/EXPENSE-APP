@@ -1,0 +1,32 @@
+{
+  "title": "20240715_152613.jpg",
+  "description": "",
+  "imageViews": "8",
+  "creationTime": {
+    "timestamp": "1721042082",
+    "formatted": "Jul 15, 2024, 11:14:42 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1721037375",
+    "formatted": "Jul 15, 2024, 9:56:15 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Anaya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNNIqc9-N_KdEHKI8Pe3cqLmQ3voFDCj2SoCa6f",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

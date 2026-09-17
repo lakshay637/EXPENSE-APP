@@ -1,0 +1,29 @@
+{
+  "title": "IMG20231101140714_01.jpg",
+  "description": "",
+  "imageViews": "8",
+  "creationTime": {
+    "timestamp": "1699890261",
+    "formatted": "Nov 13, 2023, 3:44:21 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1698827834",
+    "formatted": "Nov 1, 2023, 8:37:14 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipMkbEHzdKL_ss9-ZilriUjuUyA6NvFbk5N8vjuW",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

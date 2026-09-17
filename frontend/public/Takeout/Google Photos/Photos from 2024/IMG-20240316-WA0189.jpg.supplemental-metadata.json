@@ -1,0 +1,32 @@
+{
+  "title": "IMG-20240316-WA0189.jpg",
+  "description": "",
+  "imageViews": "2",
+  "creationTime": {
+    "timestamp": "1712085601",
+    "formatted": "Apr 2, 2024, 7:20:01 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1710610553",
+    "formatted": "Mar 16, 2024, 5:35:53 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Anaya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMAfONSKFxtIsKQI7I82hUC_vP3Hta2fQ-gVRSq",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

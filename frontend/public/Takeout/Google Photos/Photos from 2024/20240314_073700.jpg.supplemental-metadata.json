@@ -1,0 +1,29 @@
+{
+  "title": "20240314_073700.jpg",
+  "description": "",
+  "imageViews": "4",
+  "creationTime": {
+    "timestamp": "1710407549",
+    "formatted": "Mar 14, 2024, 9:12:29 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1710382020",
+    "formatted": "Mar 14, 2024, 2:07:00 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipPATYTKAAeRKGHTSbhGrF_2qudm72JwLja3D4id",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

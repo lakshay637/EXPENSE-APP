@@ -1,0 +1,29 @@
+{
+  "title": "images (11).jpeg",
+  "description": "",
+  "imageViews": "8",
+  "creationTime": {
+    "timestamp": "1686494667",
+    "formatted": "Jun 11, 2023, 2:44:27 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1686494538",
+    "formatted": "Jun 11, 2023, 2:42:18 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipOQg_8jRLRbrt5Y1-Mhj8AJ1lzotE2FxG3mIfe3",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

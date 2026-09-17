@@ -1,0 +1,32 @@
+{
+  "title": "20231112_224512.jpg",
+  "description": "",
+  "imageViews": "7",
+  "creationTime": {
+    "timestamp": "1699888733",
+    "formatted": "Nov 13, 2023, 3:18:53 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1699809316",
+    "formatted": "Nov 12, 2023, 5:15:16 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipN05QBJNUSvR5ygF-8zYmFJrQo6VKN56lOgUNUg",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

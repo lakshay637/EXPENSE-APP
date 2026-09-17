@@ -1,0 +1,35 @@
+{
+  "title": "Snapchat-1755858039.jpg",
+  "description": "",
+  "imageViews": "4",
+  "creationTime": {
+    "timestamp": "1735621980",
+    "formatted": "Dec 31, 2024, 5:13:00 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1735533335",
+    "formatted": "Dec 30, 2024, 4:35:35 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Shivu"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMU8IeY5160Ghpvr4Dfo--9ijn9k5J7_ugxwBgv",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.snapchat.android"
+  }
+}

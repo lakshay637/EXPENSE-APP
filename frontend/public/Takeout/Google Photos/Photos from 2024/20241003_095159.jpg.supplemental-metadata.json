@@ -1,0 +1,35 @@
+{
+  "title": "20241003_095159.jpg",
+  "description": "",
+  "imageViews": "8",
+  "creationTime": {
+    "timestamp": "1727968866",
+    "formatted": "Oct 3, 2024, 3:21:06 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1727929319",
+    "formatted": "Oct 3, 2024, 4:21:59 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMh3NVR9CAgRxWLEcuP72H9E6e4BG0NOu13Guaj",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

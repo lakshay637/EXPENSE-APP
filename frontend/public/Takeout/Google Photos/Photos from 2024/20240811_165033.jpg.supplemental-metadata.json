@@ -1,0 +1,32 @@
+{
+  "title": "20240811_165033.jpg",
+  "description": "",
+  "imageViews": "22",
+  "creationTime": {
+    "timestamp": "1723424722",
+    "formatted": "Aug 12, 2024, 1:05:22 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1723375233",
+    "formatted": "Aug 11, 2024, 11:20:33 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNEhHH2WibNcPYNAex1r7yzWpADqZjtTeGHONY1",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "20260129_210716.jpg",
+  "description": "",
+  "imageViews": "6",
+  "creationTime": {
+    "timestamp": "1769707061",
+    "formatted": "Jan 29, 2026, 5:17:41 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1769701038",
+    "formatted": "Jan 29, 2026, 3:37:18 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipPDe-AOBYJh8tNFKlCz8b2wWxiV_FS9_YatR6wW",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

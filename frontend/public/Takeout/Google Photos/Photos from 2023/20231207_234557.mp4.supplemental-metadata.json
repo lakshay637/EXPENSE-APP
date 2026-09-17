@@ -1,0 +1,32 @@
+{
+  "title": "20231207_234557.mp4",
+  "description": "",
+  "imageViews": "13",
+  "creationTime": {
+    "timestamp": "1702260502",
+    "formatted": "Dec 11, 2023, 2:08:22 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1701972984",
+    "formatted": "Dec 7, 2023, 6:16:24 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Shivu"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNj5Q_i9vrlTygPWDQ5nVkqpaFRFKe3Jo0VOdTa",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

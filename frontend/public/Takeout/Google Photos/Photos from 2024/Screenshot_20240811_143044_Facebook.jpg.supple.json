@@ -1,0 +1,32 @@
+{
+  "title": "Screenshot_20240811_143044_Facebook.jpg",
+  "description": "",
+  "imageViews": "5",
+  "creationTime": {
+    "timestamp": "1723370535",
+    "formatted": "Aug 11, 2024, 10:02:15 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1723366844",
+    "formatted": "Aug 11, 2024, 9:00:44 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipO3AsRnkX4p7Y4GfHp4E8NdT0IZ-dOqyIt-hcbc",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.android.systemui"
+  }
+}

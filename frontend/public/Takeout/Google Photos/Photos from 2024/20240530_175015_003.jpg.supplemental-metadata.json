@@ -1,0 +1,29 @@
+{
+  "title": "20240530_175015_003.jpg",
+  "description": "",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1717322874",
+    "formatted": "Jun 2, 2024, 10:07:54 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1717071615",
+    "formatted": "May 30, 2024, 12:20:15 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipPirsJsGAGoV80_bWrJsdWmKuNj42rQusVkLfCj",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

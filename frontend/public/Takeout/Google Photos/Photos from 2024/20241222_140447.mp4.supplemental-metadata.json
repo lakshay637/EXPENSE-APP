@@ -1,0 +1,35 @@
+{
+  "title": "20241222_140447.mp4",
+  "description": "",
+  "imageViews": "41",
+  "creationTime": {
+    "timestamp": "1734919933",
+    "formatted": "Dec 23, 2024, 2:12:13 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1734856520",
+    "formatted": "Dec 22, 2024, 8:35:20 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPscmJ9o5ymLAMqLouVHCfEa-CT_h7y_heFu9DU",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

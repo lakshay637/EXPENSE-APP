@@ -1,0 +1,32 @@
+{
+  "title": "IMG20230413120657.jpg",
+  "description": "",
+  "imageViews": "14",
+  "creationTime": {
+    "timestamp": "1681367884",
+    "formatted": "Apr 13, 2023, 6:38:04 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1681367817",
+    "formatted": "Apr 13, 2023, 6:36:57 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Anaya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPQVIuIcYsSxeArH3FSqtOmSgMzo0Ii4eOiBOeK",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

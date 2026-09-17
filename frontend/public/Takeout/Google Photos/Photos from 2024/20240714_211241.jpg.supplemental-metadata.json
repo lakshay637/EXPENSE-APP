@@ -1,0 +1,32 @@
+{
+  "title": "20240714_211241.jpg",
+  "description": "",
+  "imageViews": "9",
+  "creationTime": {
+    "timestamp": "1721009757",
+    "formatted": "Jul 15, 2024, 2:15:57 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1720971763",
+    "formatted": "Jul 14, 2024, 3:42:43 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Anaya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPTvkKX23Vs2gdNWIls3eB5ffUcy-vlO8TfpCaP",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

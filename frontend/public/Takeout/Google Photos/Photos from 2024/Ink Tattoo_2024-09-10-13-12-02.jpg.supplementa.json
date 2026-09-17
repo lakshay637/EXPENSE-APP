@@ -1,0 +1,32 @@
+{
+  "title": "Ink Tattoo_2024-09-10-13-12-02.jpg",
+  "description": "",
+  "imageViews": "7",
+  "creationTime": {
+    "timestamp": "1725967360",
+    "formatted": "Sep 10, 2024, 11:22:40 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1725954123",
+    "formatted": "Sep 10, 2024, 7:42:03 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipO5BZhsFMkzSdMgNlwHhSAn6pjA6sVeTNx_fWoC",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.samsung.android.game.gametools"
+  }
+}

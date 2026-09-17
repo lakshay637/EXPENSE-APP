@@ -1,0 +1,44 @@
+{
+  "title": "20240430_161722.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1714648906",
+    "formatted": "May 2, 2024, 11:21:46 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1714474042",
+    "formatted": "Apr 30, 2024, 10:47:22 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Arya"
+  }, {
+    "name": "Ayush"
+  }, {
+    "name": "Siddhi"
+  }, {
+    "name": "Anaya"
+  }, {
+    "name": "Neha"
+  }, {
+    "name": "Shipra"
+  }, {
+    "name": "Kaashu"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMKqMz5cWN2giiYUw_jWBL2IGZlcyGaGdpu39FB",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Gym Heroes_2024-10-14-11-02-30.jpg",
+  "description": "",
+  "imageViews": "8",
+  "creationTime": {
+    "timestamp": "1728922582",
+    "formatted": "Oct 14, 2024, 4:16:22 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1728883951",
+    "formatted": "Oct 14, 2024, 5:32:31 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipP4x9xoxAiV2No3V6xzvcDShwA6zs6GcIGvanTg",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.samsung.android.game.gametools"
+  }
+}

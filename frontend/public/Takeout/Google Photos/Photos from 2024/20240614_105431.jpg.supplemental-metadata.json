@@ -1,0 +1,29 @@
+{
+  "title": "20240614_105431.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1718369348",
+    "formatted": "Jun 14, 2024, 12:49:08 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1718342671",
+    "formatted": "Jun 14, 2024, 5:24:31 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipP4CKRV_o4CSYsRFK397nwXQAqiCiGazasJF0wX",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

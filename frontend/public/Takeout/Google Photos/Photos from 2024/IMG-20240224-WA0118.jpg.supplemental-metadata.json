@@ -1,0 +1,35 @@
+{
+  "title": "IMG-20240224-WA0118.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1751650839",
+    "formatted": "Jul 4, 2025, 5:40:39 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1708791358",
+    "formatted": "Feb 24, 2024, 4:15:58 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNoKF9eBomPMKf6Pk7i6blGyrNu5zgwcwfmGeF-",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.whatsapp"
+  }
+}

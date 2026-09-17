@@ -1,0 +1,32 @@
+{
+  "title": "IMG20240101165721.jpg",
+  "description": "",
+  "imageViews": "5",
+  "creationTime": {
+    "timestamp": "1712085555",
+    "formatted": "Apr 2, 2024, 7:19:15 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1704108441",
+    "formatted": "Jan 1, 2024, 11:27:21 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Patidev"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNiMwj3euE3dcsQJipM8sPtGdf4PRYdIrsN58t-",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

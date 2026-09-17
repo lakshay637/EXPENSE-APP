@@ -1,0 +1,37 @@
+{
+  "title": "20240819_195105.gif",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1724081606",
+    "formatted": "Aug 19, 2024, 3:33:26 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1724077265",
+    "formatted": "Aug 19, 2024, 2:21:05 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Dhairya"
+  }, {
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNg5IqbKVf0v_LkUokHFI86ascINewSYbu1aZzo",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.mimage.photoretouching"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "VID-20230601-WA0032.mp4",
+  "description": "",
+  "imageViews": "17",
+  "creationTime": {
+    "timestamp": "1699891317",
+    "formatted": "Nov 13, 2023, 4:01:57 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1699891310",
+    "formatted": "Nov 13, 2023, 4:01:50 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Dhairya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNEvwMoqmRQ8GnH_qsCChoRtmuEThlctwb0lGl1",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Vido_1696050685944.jpg",
+  "description": "",
+  "imageViews": "44",
+  "creationTime": {
+    "timestamp": "1699890228",
+    "formatted": "Nov 13, 2023, 3:43:48 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1696050685",
+    "formatted": "Sep 30, 2023, 5:11:25 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipNV8sDcGOh1ub5gMJjloFdmNVuxpPJGvsw-620N",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

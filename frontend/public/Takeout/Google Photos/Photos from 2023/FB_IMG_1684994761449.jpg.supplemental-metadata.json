@@ -1,0 +1,29 @@
+{
+  "title": "FB_IMG_1684994761449.jpg",
+  "description": "",
+  "imageViews": "11",
+  "creationTime": {
+    "timestamp": "1684994787",
+    "formatted": "May 25, 2023, 6:06:27 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1684994761",
+    "formatted": "May 25, 2023, 6:06:01 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipOOrY2svMv9sAlS6Ok1cC_xe2P3H6GEzhn8S2wS",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

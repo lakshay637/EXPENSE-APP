@@ -1,0 +1,32 @@
+{
+  "title": "20240530_175131.jpg",
+  "description": "",
+  "imageViews": "4",
+  "creationTime": {
+    "timestamp": "1717323549",
+    "formatted": "Jun 2, 2024, 10:19:09 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1717071692",
+    "formatted": "May 30, 2024, 12:21:32 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPM88yAFWC2jWiMq6u4cphI98vPCjSvt_aE9Xmj",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

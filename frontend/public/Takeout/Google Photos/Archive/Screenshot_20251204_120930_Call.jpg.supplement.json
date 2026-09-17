@@ -1,0 +1,33 @@
+{
+  "title": "Screenshot_20251204_120930_Call.jpg",
+  "description": "",
+  "imageViews": "11",
+  "creationTime": {
+    "timestamp": "1764835847",
+    "formatted": "Dec 4, 2025, 8:10:47 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1764830370",
+    "formatted": "Dec 4, 2025, 6:39:30 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "archived": true,
+  "url": "https://photos.google.com/photo/AF1QipNYEJqlZlYezSaDrpjjf6BPOVi9mBnqtY6ClTqZ",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.android.systemui"
+  }
+}

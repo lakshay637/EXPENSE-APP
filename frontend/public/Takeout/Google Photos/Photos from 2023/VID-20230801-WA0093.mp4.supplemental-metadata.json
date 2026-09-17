@@ -1,0 +1,31 @@
+{
+  "title": "VID-20230801-WA0093.mp4",
+  "description": "",
+  "imageViews": "22",
+  "creationTime": {
+    "timestamp": "1699891054",
+    "formatted": "Nov 13, 2023, 3:57:34 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1699891045",
+    "formatted": "Nov 13, 2023, 3:57:25 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }, {
+    "name": "Patidev"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipOaGf6b3cKBRVCiT_mgfnGAoN5aLMhV8dQKaykn",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

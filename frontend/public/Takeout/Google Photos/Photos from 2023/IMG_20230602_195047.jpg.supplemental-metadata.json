@@ -1,0 +1,34 @@
+{
+  "title": "IMG_20230602_195047.jpg",
+  "description": "",
+  "imageViews": "18",
+  "creationTime": {
+    "timestamp": "1685715664",
+    "formatted": "Jun 2, 2023, 2:21:04 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1685715648",
+    "formatted": "Jun 2, 2023, 2:20:48 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Shivu"
+  }, {
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPI_KGvUb0f1HouPwW_P5iPGQI0AQJlsEpBzzyi",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

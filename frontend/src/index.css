@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Card & Utility Styling */
+.card-premium {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.03) !important;
+}
+
+.card-premium-hover {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-premium-hover:hover {
+  transform: translateY(-3px);
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.08) !important;
+}
+
+/* Custom Glow Accents */
+.btn-coral {
+  background: linear-gradient(135deg, #FF735C 0%, #E55A43 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 4px 14px 0 rgba(255, 115, 92, 0.35) !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-coral:hover {
+  background: linear-gradient(135deg, #e55a43 0%, #d44933 100%) !important;
+  box-shadow: 0 6px 20px 0 rgba(255, 115, 92, 0.5) !important;
+  transform: translateY(-1px);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Clean Ant Design Overrides */
+.ant-card {
+  border-radius: 1rem !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+.ant-card-head {
+  border-bottom: 1px solid #f1f5f9 !important;
+  color: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+.ant-input, .ant-input-password {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+  border-radius: 0.75rem !important;
+}
+
+.ant-input:focus, .ant-input-focused, .ant-input-password:focus, .ant-input-password-focused {
+  border-color: #FF735C !important;
+  box-shadow: 0 0 0 2px rgba(255, 115, 92, 0.15) !important;
+}
+
+.ant-table-thead > tr > th {
+  background: #f8fafc !important;
+  color: #475569 !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom: 1px solid #f1f5f9 !important;
+  color: #1e293b !important;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f8fafc !important;
+}

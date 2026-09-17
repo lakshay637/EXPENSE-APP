@@ -1,0 +1,29 @@
+{
+  "title": "VID-20220908-WA0139.mp4",
+  "description": "",
+  "imageViews": "20",
+  "creationTime": {
+    "timestamp": "1699891499",
+    "formatted": "Nov 13, 2023, 4:04:59 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1699891491",
+    "formatted": "Nov 13, 2023, 4:04:51 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMKcF_j5pPgogeNVFr2hraie1YcDp-6Bik1GvIj",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

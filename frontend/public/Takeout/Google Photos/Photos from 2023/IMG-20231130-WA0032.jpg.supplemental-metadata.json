@@ -1,0 +1,32 @@
+{
+  "title": "IMG-20231130-WA0032.jpg",
+  "description": "",
+  "imageViews": "2",
+  "creationTime": {
+    "timestamp": "1712077891",
+    "formatted": "Apr 2, 2024, 5:11:31 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1701285712",
+    "formatted": "Nov 29, 2023, 7:21:52 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Anaya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipOOQbXtFXtKq3d-4mr5iHKjzrHgcPG2Otgynba9",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

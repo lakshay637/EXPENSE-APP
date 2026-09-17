@@ -1,0 +1,36 @@
+{
+  "title": "FB_IMG_1689064195032.jpg",
+  "description": "",
+  "imageViews": "55",
+  "creationTime": {
+    "timestamp": "1689071205",
+    "formatted": "Jul 11, 2023, 10:26:45 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1689064195",
+    "formatted": "Jul 11, 2023, 8:29:55 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Patidev"
+  }, {
+    "name": "Neha"
+  }, {
+    "name": "Mumy"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipN46NYHUCnobwmsHFxXXM_K_JvYGlmq9V2ECLhF",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "title": "IMG-20231208-WA0021.jpg",
+  "description": "",
+  "imageViews": "5",
+  "creationTime": {
+    "timestamp": "1712085493",
+    "formatted": "Apr 2, 2024, 7:18:13 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1702031361",
+    "formatted": "Dec 8, 2023, 10:29:21 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }, {
+    "name": "Manu"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMwdwbCBXVce_ym5U_1cX2Lkjy-alniKVH4qwFF",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "20260208_215134.jpg",
+  "description": "",
+  "imageViews": "8",
+  "creationTime": {
+    "timestamp": "1770631525",
+    "formatted": "Feb 9, 2026, 10:05:25 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1770567694",
+    "formatted": "Feb 8, 2026, 4:21:34 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipPH4y1r60zC5VrgyH1Xvs0mczTSNlYA7hqR8EPC",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

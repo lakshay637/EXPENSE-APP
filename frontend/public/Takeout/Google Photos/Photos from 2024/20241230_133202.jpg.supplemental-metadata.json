@@ -1,0 +1,35 @@
+{
+  "title": "20241230_133202.jpg",
+  "description": "",
+  "imageViews": "10",
+  "creationTime": {
+    "timestamp": "1735621993",
+    "formatted": "Dec 31, 2024, 5:13:13 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1735545723",
+    "formatted": "Dec 30, 2024, 8:02:03 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipOR8ReJQb8wZllPehEecl8-bl9gS4L6jpfUX-Aq",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

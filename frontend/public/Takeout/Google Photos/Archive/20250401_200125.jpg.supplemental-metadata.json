@@ -1,0 +1,36 @@
+{
+  "title": "20250401_200125.jpg",
+  "description": "",
+  "imageViews": "9",
+  "creationTime": {
+    "timestamp": "1743564796",
+    "formatted": "Apr 2, 2025, 3:33:16 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1743517887",
+    "formatted": "Apr 1, 2025, 2:31:27 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Arya"
+  }],
+  "archived": true,
+  "url": "https://photos.google.com/photo/AF1QipNX6Vy5iBa0ze0ySU5HWeLTBFUZPZT8VgudJUdU",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

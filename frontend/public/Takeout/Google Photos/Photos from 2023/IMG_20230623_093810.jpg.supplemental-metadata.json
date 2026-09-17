@@ -1,0 +1,32 @@
+{
+  "title": "IMG_20230623_093810.jpg",
+  "description": "",
+  "imageViews": "13",
+  "creationTime": {
+    "timestamp": "1687493314",
+    "formatted": "Jun 23, 2023, 4:08:34 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1687493290",
+    "formatted": "Jun 23, 2023, 4:08:10 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMDTy2QcMJWGyZKj_k5ddMovOcamA_0XjafIZZp",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

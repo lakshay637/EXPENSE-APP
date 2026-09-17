@@ -1,0 +1,32 @@
+{
+  "title": "20241019_204531.jpg",
+  "description": "",
+  "imageViews": "13",
+  "creationTime": {
+    "timestamp": "1729355864",
+    "formatted": "Oct 19, 2024, 4:37:44 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1729350933",
+    "formatted": "Oct 19, 2024, 3:15:33 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipMl3zFPh9KFpWH8quEhSi8I2K-L3PuNfD_4-2eM",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

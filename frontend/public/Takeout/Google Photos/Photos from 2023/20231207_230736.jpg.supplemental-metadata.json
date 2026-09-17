@@ -1,0 +1,32 @@
+{
+  "title": "20231207_230736.jpg",
+  "description": "",
+  "imageViews": "12",
+  "creationTime": {
+    "timestamp": "1702198468",
+    "formatted": "Dec 10, 2023, 8:54:28 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1701970656",
+    "formatted": "Dec 7, 2023, 5:37:36 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipO1TApU8zU-nvC8XeUxo6qXt4CzM_qlbT_qnyr-",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

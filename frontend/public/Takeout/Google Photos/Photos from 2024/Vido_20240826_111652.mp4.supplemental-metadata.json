@@ -1,0 +1,32 @@
+{
+  "title": "Vido_20240826_111652.mp4",
+  "description": "",
+  "imageViews": "9",
+  "creationTime": {
+    "timestamp": "1724651876",
+    "formatted": "Aug 26, 2024, 5:57:56 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1724651223",
+    "formatted": "Aug 26, 2024, 5:47:03 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipN2ii8hTSK-8LpCoxXM9yTO7YhlMlejQ1q1uT_2",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.vido.particle.ly.lyrical.status.maker"
+  }
+}

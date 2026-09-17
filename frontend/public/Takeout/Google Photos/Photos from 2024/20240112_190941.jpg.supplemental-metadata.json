@@ -1,0 +1,34 @@
+{
+  "title": "20240112_190941.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1705864219",
+    "formatted": "Jan 21, 2024, 7:10:19 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1705066781",
+    "formatted": "Jan 12, 2024, 1:39:41 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }, {
+    "name": "Patidev"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNtWMkJmlorGejjuomS9E3Hw9afAqtRPWkxHFeV",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "IMG_20230815_073456.jpg",
+  "description": "",
+  "imageViews": "11",
+  "creationTime": {
+    "timestamp": "1699890166",
+    "formatted": "Nov 13, 2023, 3:42:46 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1692065096",
+    "formatted": "Aug 15, 2023, 2:04:56 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMlYVAVHP-4gpmkKsxjT8BeEUpqAt04tcmHRSGx",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

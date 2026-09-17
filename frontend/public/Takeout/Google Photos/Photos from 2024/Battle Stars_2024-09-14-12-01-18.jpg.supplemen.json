@@ -1,0 +1,32 @@
+{
+  "title": "Battle Stars_2024-09-14-12-01-18.jpg",
+  "description": "",
+  "imageViews": "8",
+  "creationTime": {
+    "timestamp": "1726301459",
+    "formatted": "Sep 14, 2024, 8:10:59 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1726295479",
+    "formatted": "Sep 14, 2024, 6:31:19 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipPKQbL4v6A5G0fsKYf98cEx3g5KPb9_EOluX7rn",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.samsung.android.game.gametools"
+  }
+}

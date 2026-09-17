@@ -1,0 +1,32 @@
+{
+  "title": "20240819_162329.mp4",
+  "description": "",
+  "imageViews": "32",
+  "creationTime": {
+    "timestamp": "1724081626",
+    "formatted": "Aug 19, 2024, 3:33:46 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1724064822",
+    "formatted": "Aug 19, 2024, 10:53:42 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipOk66iSR9DRLU7_5uE7kne-S5BVh97yxbDay6R2",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

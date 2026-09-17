@@ -1,0 +1,36 @@
+{
+  "title": "20231125_223154.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1701020434",
+    "formatted": "Nov 26, 2023, 5:40:34 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1700931715",
+    "formatted": "Nov 25, 2023, 5:01:55 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Siddhi"
+  }, {
+    "name": "Patidev"
+  }, {
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMOGqmra3eHVwk8Z1sYIGGFUUl-R71Ij0h2HGk7",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

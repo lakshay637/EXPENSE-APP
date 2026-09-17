@@ -1,0 +1,32 @@
+{
+  "title": "IMG20230527131905.jpg",
+  "description": "",
+  "imageViews": "21",
+  "creationTime": {
+    "timestamp": "1685173769",
+    "formatted": "May 27, 2023, 7:49:29 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1685173745",
+    "formatted": "May 27, 2023, 7:49:05 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNJXmgBmD9W3YHvjnBIC6xxpdjk3FdbisXibIEB",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

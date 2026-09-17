@@ -1,0 +1,34 @@
+{
+  "title": "IMG-20240312-WA0156.jpg",
+  "description": "",
+  "imageViews": "2",
+  "creationTime": {
+    "timestamp": "1712085597",
+    "formatted": "Apr 2, 2024, 7:19:57 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1710261338",
+    "formatted": "Mar 12, 2024, 4:35:38 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Anaya"
+  }, {
+    "name": "Mom"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipOm5EwYF02MBUpVBG5XCeY2fVNksIhE5ts_NnBq",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

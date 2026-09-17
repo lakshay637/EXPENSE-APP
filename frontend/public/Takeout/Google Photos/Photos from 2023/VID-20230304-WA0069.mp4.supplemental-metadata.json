@@ -1,0 +1,29 @@
+{
+  "title": "VID-20230304-WA0069.mp4",
+  "description": "",
+  "imageViews": "29",
+  "creationTime": {
+    "timestamp": "1699891374",
+    "formatted": "Nov 13, 2023, 4:02:54 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1699891369",
+    "formatted": "Nov 13, 2023, 4:02:49 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Patidev"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipM48NhgM2puMGo1TO4znxWtGkFaXcoK8BoDdhXK",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

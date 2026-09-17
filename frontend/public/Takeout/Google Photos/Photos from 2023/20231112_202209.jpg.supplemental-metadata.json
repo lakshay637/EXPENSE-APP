@@ -1,0 +1,32 @@
+{
+  "title": "20231112_202209.jpg",
+  "description": "",
+  "imageViews": "8",
+  "creationTime": {
+    "timestamp": "1699888661",
+    "formatted": "Nov 13, 2023, 3:17:41 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1699800730",
+    "formatted": "Nov 12, 2023, 2:52:10 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Patidev"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMWg2GiVXh8uyvXgKmLXrvMBwW4HxjNAI3un3DT",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

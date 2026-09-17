@@ -1,0 +1,37 @@
+{
+  "title": "IMG_20260217_184902.jpg",
+  "description": "",
+  "imageViews": "7",
+  "creationTime": {
+    "timestamp": "1771337798",
+    "formatted": "Feb 17, 2026, 2:16:38 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1771334342",
+    "formatted": "Feb 17, 2026, 1:19:02 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Anaya"
+  }, {
+    "name": "Shivu"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipOMUwqX9mJ6dEbjjvn70CIKsFAg9UbqFmV1GW0O",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "photo.filter.selfie.beauty.camera"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "IMG_20230706_111753.jpg",
+  "description": "",
+  "imageViews": "21",
+  "creationTime": {
+    "timestamp": "1688622494",
+    "formatted": "Jul 6, 2023, 5:48:14 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1688622474",
+    "formatted": "Jul 6, 2023, 5:47:54 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Shivu"
+  }, {
+    "name": "Arya"
+  }, {
+    "name": "Siddhi"
+  }, {
+    "name": "Maanu"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipP4lef6y5afXL1jY6xEhK_fXsPjVXgkuLszPHpR",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

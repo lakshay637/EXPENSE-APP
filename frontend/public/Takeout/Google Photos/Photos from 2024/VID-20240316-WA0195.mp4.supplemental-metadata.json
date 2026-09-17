@@ -1,0 +1,32 @@
+{
+  "title": "VID-20240316-WA0195.mp4",
+  "description": "",
+  "imageViews": "21",
+  "creationTime": {
+    "timestamp": "1712085856",
+    "formatted": "Apr 2, 2024, 7:24:16 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1710610587",
+    "formatted": "Mar 16, 2024, 5:36:27 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Anaya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNvrZ6t8YVAbFVubq0jGJRSBpmnIRtsWL-kTsLV",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

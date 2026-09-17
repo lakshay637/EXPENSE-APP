@@ -1,0 +1,32 @@
+{
+  "title": "IMG-20231211-WA0039.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1712085523",
+    "formatted": "Apr 2, 2024, 7:18:43 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1702269002",
+    "formatted": "Dec 11, 2023, 4:30:02 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipOgMolp8RkseRCF2OySO6QzUz9JZAqLiFJUe7oT",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

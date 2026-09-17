@@ -1,0 +1,32 @@
+{
+  "title": "20240616_151746.mp4",
+  "description": "",
+  "imageViews": "26",
+  "creationTime": {
+    "timestamp": "1718621732",
+    "formatted": "Jun 17, 2024, 10:55:32 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1718531277",
+    "formatted": "Jun 16, 2024, 9:47:57 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Siddhi"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNMPzysMjZKk1iRrBpXRriidXhbvhig_rmgR1X-",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

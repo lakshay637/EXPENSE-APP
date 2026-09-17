@@ -1,0 +1,35 @@
+{
+  "title": "20260201_145446.jpg",
+  "description": "",
+  "imageViews": "7",
+  "creationTime": {
+    "timestamp": "1769937902",
+    "formatted": "Feb 1, 2026, 9:25:02 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1769937886",
+    "formatted": "Feb 1, 2026, 9:24:46 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Shivu"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNjCl0MEaaJKTd_Up_HRtSxW-nt9a_lqBkqYP8e",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

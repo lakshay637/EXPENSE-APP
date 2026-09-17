@@ -1,0 +1,32 @@
+{
+  "title": "Asphalt 8_2024-10-11-15-02-16.jpg",
+  "description": "",
+  "imageViews": "11",
+  "creationTime": {
+    "timestamp": "1728712087",
+    "formatted": "Oct 12, 2024, 5:48:07 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1728639137",
+    "formatted": "Oct 11, 2024, 9:32:17 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipPyOfSY0xyjMIOGD0rlOSRig0iNNY9gsCgP93PH",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.samsung.android.game.gametools"
+  }
+}

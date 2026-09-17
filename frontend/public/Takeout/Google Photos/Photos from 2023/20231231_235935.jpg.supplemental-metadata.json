@@ -1,0 +1,36 @@
+{
+  "title": "20231231_235935.jpg",
+  "description": "",
+  "imageViews": "4",
+  "creationTime": {
+    "timestamp": "1704221019",
+    "formatted": "Jan 2, 2024, 6:43:39 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1704047375",
+    "formatted": "Dec 31, 2023, 6:29:35 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Patidev"
+  }, {
+    "name": "Shipra"
+  }, {
+    "name": "Mausi"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNDZzQU-tX-V2QPfJzCVKURpPPSCibCtr-9n-o4",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

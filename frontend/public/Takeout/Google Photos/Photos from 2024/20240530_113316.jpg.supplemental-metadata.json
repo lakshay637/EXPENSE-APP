@@ -1,0 +1,32 @@
+{
+  "title": "20240530_113316.jpg",
+  "description": "",
+  "imageViews": "8",
+  "creationTime": {
+    "timestamp": "1717322863",
+    "formatted": "Jun 2, 2024, 10:07:43 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1717048997",
+    "formatted": "May 30, 2024, 6:03:17 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Maanu"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipM8UorfH0MLplBWmC4UtoA4aO69HQ2A1c9CdTG1",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

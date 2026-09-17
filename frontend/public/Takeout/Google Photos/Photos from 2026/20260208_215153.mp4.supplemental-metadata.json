@@ -1,0 +1,35 @@
+{
+  "title": "20260208_215153.mp4",
+  "description": "",
+  "imageViews": "6",
+  "creationTime": {
+    "timestamp": "1770631548",
+    "formatted": "Feb 9, 2026, 10:05:48 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1770567718",
+    "formatted": "Feb 8, 2026, 4:21:58 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipM09FmoGT76pfu8WzVY5_FDylu3C1Rf8I9xHf7G",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "20260114_164712.jpg",
+  "description": "",
+  "imageViews": "8",
+  "creationTime": {
+    "timestamp": "1768389457",
+    "formatted": "Jan 14, 2026, 11:17:37 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1768389432",
+    "formatted": "Jan 14, 2026, 11:17:12 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipOYCJ2XAvk3W0VTKgnG4IbSQuSI8L_6NeNGnfGa",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.samsung.app.newtrim"
+  }
+}

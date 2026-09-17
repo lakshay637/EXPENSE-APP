@@ -1,0 +1,36 @@
+{
+  "title": "VID20231101140626.mp4",
+  "description": "",
+  "imageViews": "22",
+  "creationTime": {
+    "timestamp": "1699890325",
+    "formatted": "Nov 13, 2023, 3:45:25 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1698827789",
+    "formatted": "Nov 1, 2023, 8:36:29 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipP6JGJ1MFLGH7-aZd6cRMt8DkN6IUGGxZPu66u-",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

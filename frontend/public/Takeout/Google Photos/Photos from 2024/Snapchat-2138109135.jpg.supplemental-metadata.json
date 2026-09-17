@@ -1,0 +1,35 @@
+{
+  "title": "Snapchat-2138109135.jpg",
+  "description": "",
+  "imageViews": "4",
+  "creationTime": {
+    "timestamp": "1735621967",
+    "formatted": "Dec 31, 2024, 5:12:47 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1735533151",
+    "formatted": "Dec 30, 2024, 4:32:31 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Siddhi"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPDLUrRCYceo4g6iLkMdwYW9yHBpMOyimTJV52y",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.snapchat.android"
+  }
+}

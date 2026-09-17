@@ -1,0 +1,33 @@
+{
+  "title": "20251204_114954.jpg",
+  "description": "",
+  "imageViews": "6",
+  "creationTime": {
+    "timestamp": "1764898308",
+    "formatted": "Dec 5, 2025, 1:31:48 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1764829195",
+    "formatted": "Dec 4, 2025, 6:19:55 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "archived": true,
+  "url": "https://photos.google.com/photo/AF1QipNAmAeKgAYIMpZBnrMrnwZJxc8gQdqJfcChz57e",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

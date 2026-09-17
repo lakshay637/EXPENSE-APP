@@ -1,0 +1,32 @@
+{
+  "title": "Screenshot_20260213_211820_Facebook.jpg",
+  "description": "",
+  "imageViews": "7",
+  "creationTime": {
+    "timestamp": "1771049399",
+    "formatted": "Feb 14, 2026, 6:09:59 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1770997700",
+    "formatted": "Feb 13, 2026, 3:48:20 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipN3zj_YSTekp4Soav0j9nEz49otv2yeWCTbzcrQ",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.android.systemui"
+  }
+}

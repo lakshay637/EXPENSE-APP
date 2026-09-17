@@ -1,0 +1,43 @@
+{
+  "title": "IMG20241230100703.jpg",
+  "description": "",
+  "imageViews": "8",
+  "creationTime": {
+    "timestamp": "1751650839",
+    "formatted": "Jul 4, 2025, 5:40:39 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1735533423",
+    "formatted": "Dec 30, 2024, 4:37:03 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }, {
+    "name": "Siddhi"
+  }, {
+    "name": "Patidev"
+  }, {
+    "name": "Shivu"
+  }, {
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPo3S8pp908KH450Xv_H7cG3Ur_sSYNYWDiVUa0",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.whatsapp"
+  }
+}

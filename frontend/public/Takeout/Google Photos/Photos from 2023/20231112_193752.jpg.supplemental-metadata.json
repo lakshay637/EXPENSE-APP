@@ -1,0 +1,36 @@
+{
+  "title": "20231112_193752.jpg",
+  "description": "",
+  "imageViews": "4",
+  "creationTime": {
+    "timestamp": "1699888629",
+    "formatted": "Nov 13, 2023, 3:17:09 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1699798074",
+    "formatted": "Nov 12, 2023, 2:07:54 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Shivu"
+  }, {
+    "name": "Neha"
+  }, {
+    "name": "Patidev"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNjg8KcrlGkI7uYw5rqFv8AuNCr5qNegP259cpM",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

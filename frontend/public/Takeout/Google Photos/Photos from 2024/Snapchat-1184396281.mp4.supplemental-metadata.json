@@ -1,0 +1,32 @@
+{
+  "title": "Snapchat-1184396281.mp4",
+  "description": "",
+  "imageViews": "10",
+  "creationTime": {
+    "timestamp": "1735622022",
+    "formatted": "Dec 31, 2024, 5:13:42 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1735532556",
+    "formatted": "Dec 30, 2024, 4:22:36 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipPiBIZ84d13siNTs1yZUGPnEKEzu4E6HDfHhTq2",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.snapchat.android"
+  }
+}

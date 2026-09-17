@@ -1,0 +1,32 @@
+{
+  "title": "MaskGun_2024-11-01-12-04-38.jpg",
+  "description": "",
+  "imageViews": "5",
+  "creationTime": {
+    "timestamp": "1730477269",
+    "formatted": "Nov 1, 2024, 4:07:49 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1730442878",
+    "formatted": "Nov 1, 2024, 6:34:38 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipMCn6apR6voFlACyO0pso8gX-DkAZ0MV4UUVnYE",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.samsung.android.game.gametools"
+  }
+}

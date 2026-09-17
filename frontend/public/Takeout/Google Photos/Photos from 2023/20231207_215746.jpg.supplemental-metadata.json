@@ -1,0 +1,29 @@
+{
+  "title": "20231207_215746.jpg",
+  "description": "",
+  "imageViews": "21",
+  "creationTime": {
+    "timestamp": "1702111400",
+    "formatted": "Dec 9, 2023, 8:43:20 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1701966466",
+    "formatted": "Dec 7, 2023, 4:27:46 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipOoMTwRVxkY9tjg7SY8ugHgFhzrzTSecfcKnPGB",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

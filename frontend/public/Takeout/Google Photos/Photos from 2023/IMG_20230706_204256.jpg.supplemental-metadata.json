@@ -1,0 +1,32 @@
+{
+  "title": "IMG_20230706_204256.jpg",
+  "description": "",
+  "imageViews": "18",
+  "creationTime": {
+    "timestamp": "1688656394",
+    "formatted": "Jul 6, 2023, 3:13:14 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1688656376",
+    "formatted": "Jul 6, 2023, 3:12:56 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipM9baKB9rNdNLUBm6KxVHv0FNLWMISyj6gQs0d1",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "title": "20241130_215201.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1732983745",
+    "formatted": "Nov 30, 2024, 4:22:25 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1732983723",
+    "formatted": "Nov 30, 2024, 4:22:03 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Ayush"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPWYtzMYsDqLp_i15AEIAeyrU-FtYtiOeJjEUHp",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

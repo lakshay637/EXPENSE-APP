@@ -1,0 +1,35 @@
+{
+  "title": "FB_IMG_1716438849675.jpg",
+  "description": "",
+  "imageViews": "7",
+  "creationTime": {
+    "timestamp": "1716473380",
+    "formatted": "May 23, 2024, 2:09:40 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1716438849",
+    "formatted": "May 23, 2024, 4:34:09 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Shipra"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipN4u6k8qvacCUXTBhmYVdzbcb7KOzpVkyXDAqo5",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.facebook.katana"
+  }
+}

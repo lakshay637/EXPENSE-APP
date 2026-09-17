@@ -1,0 +1,32 @@
+{
+  "title": "Vido_20230705_152609.mp4",
+  "description": "",
+  "imageViews": "22",
+  "creationTime": {
+    "timestamp": "1688551043",
+    "formatted": "Jul 5, 2023, 9:57:23 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1688551019",
+    "formatted": "Jul 5, 2023, 9:56:59 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipPHxax7dA2IENSKLiMFzOsXfsnATV1RkHzUt2XQ",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

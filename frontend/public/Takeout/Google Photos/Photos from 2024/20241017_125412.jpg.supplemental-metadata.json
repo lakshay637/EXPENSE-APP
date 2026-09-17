@@ -1,0 +1,32 @@
+{
+  "title": "20241017_125412.jpg",
+  "description": "",
+  "imageViews": "5",
+  "creationTime": {
+    "timestamp": "1729186911",
+    "formatted": "Oct 17, 2024, 5:41:51 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1729149852",
+    "formatted": "Oct 17, 2024, 7:24:12 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipOmXpdTZ-kijcWTOOkgNqww2EKnBzviDdYBoYkc",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

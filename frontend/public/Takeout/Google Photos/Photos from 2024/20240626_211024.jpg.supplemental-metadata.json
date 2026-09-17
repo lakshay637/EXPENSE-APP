@@ -1,0 +1,29 @@
+{
+  "title": "20240626_211024.jpg",
+  "description": "",
+  "imageViews": "5",
+  "creationTime": {
+    "timestamp": "1719417597",
+    "formatted": "Jun 26, 2024, 3:59:57 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1719416425",
+    "formatted": "Jun 26, 2024, 3:40:25 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipM-0IE8rcT5nieQxDQ5WtA9SoG5qSkz7zHNZgdb",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

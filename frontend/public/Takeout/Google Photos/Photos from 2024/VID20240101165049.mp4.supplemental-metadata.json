@@ -1,0 +1,32 @@
+{
+  "title": "VID20240101165049.mp4",
+  "description": "",
+  "imageViews": "51",
+  "creationTime": {
+    "timestamp": "1712085659",
+    "formatted": "Apr 2, 2024, 7:20:59 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1704108066",
+    "formatted": "Jan 1, 2024, 11:21:06 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Neha"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipM43E07oIFc98zSvQdjF40n2Qwo-wruRid_AyYN",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

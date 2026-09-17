@@ -1,0 +1,32 @@
+{
+  "title": "Snapchat-605953236.jpg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1724651853",
+    "formatted": "Aug 26, 2024, 5:57:33 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1724649818",
+    "formatted": "Aug 26, 2024, 5:23:38 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipMRnlCvdhQfayN8RTMxDE-1jlDGwC0zQqKxWNd2",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.snapchat.android"
+  }
+}

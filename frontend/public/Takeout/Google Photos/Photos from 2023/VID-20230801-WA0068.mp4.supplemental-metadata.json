@@ -1,0 +1,31 @@
+{
+  "title": "VID-20230801-WA0068.mp4",
+  "description": "",
+  "imageViews": "29",
+  "creationTime": {
+    "timestamp": "1699891105",
+    "formatted": "Nov 13, 2023, 3:58:25 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1699891103",
+    "formatted": "Nov 13, 2023, 3:58:23 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Patidev"
+  }, {
+    "name": "Shivu"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipOXC5hb_jrEQBs0RRnSu_q8APKU3kBJRuPu-OqE",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

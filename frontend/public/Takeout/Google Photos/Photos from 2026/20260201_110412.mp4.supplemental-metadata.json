@@ -1,0 +1,32 @@
+{
+  "title": "20260201_110412.mp4",
+  "description": "",
+  "imageViews": "15",
+  "creationTime": {
+    "timestamp": "1769939336",
+    "formatted": "Feb 1, 2026, 9:48:56 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1769924079",
+    "formatted": "Feb 1, 2026, 5:34:39 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipODRwERlFiirGiJG9YfTzAWHZ0ATdsh6LFmMy6E",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.sec.android.app.camera"
+  }
+}

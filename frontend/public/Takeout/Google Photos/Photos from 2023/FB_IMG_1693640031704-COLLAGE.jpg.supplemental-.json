@@ -1,0 +1,31 @@
+{
+  "title": "FB_IMG_1693640031704-COLLAGE.jpg",
+  "description": "",
+  "imageViews": "7",
+  "creationTime": {
+    "timestamp": "1761902678",
+    "formatted": "Oct 31, 2025, 9:24:38 AM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1693640095",
+    "formatted": "Sep 2, 2023, 7:34:55 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Mom"
+  }, {
+    "name": "Shipra"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipNL4CPQArPxqJiod4zYJpAAMLKphSIoxGFwIDuU",
+  "googlePhotosOrigin": {
+    "composition": {
+      "type": "AUTO"
+    }
+  }
+}

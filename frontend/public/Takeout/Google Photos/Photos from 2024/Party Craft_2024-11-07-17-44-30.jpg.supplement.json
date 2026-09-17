@@ -1,0 +1,32 @@
+{
+  "title": "Party Craft_2024-11-07-17-44-30.jpg",
+  "description": "",
+  "imageViews": "12",
+  "creationTime": {
+    "timestamp": "1730982799",
+    "formatted": "Nov 7, 2024, 12:33:19 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1730981670",
+    "formatted": "Nov 7, 2024, 12:14:30 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "url": "https://photos.google.com/photo/AF1QipNlmQpir8KENbUXnWMO8Vq2u9jjEdKfEYgb9KPj",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  },
+  "appSource": {
+    "androidPackageName": "com.samsung.android.game.gametools"
+  }
+}

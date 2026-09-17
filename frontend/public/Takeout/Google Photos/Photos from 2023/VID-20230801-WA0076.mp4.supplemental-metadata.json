@@ -1,0 +1,35 @@
+{
+  "title": "VID-20230801-WA0076.mp4",
+  "description": "",
+  "imageViews": "38",
+  "creationTime": {
+    "timestamp": "1699891030",
+    "formatted": "Nov 13, 2023, 3:57:10 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1699891024",
+    "formatted": "Nov 13, 2023, 3:57:04 PM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Ayush"
+  }, {
+    "name": "Shipra"
+  }, {
+    "name": "Patidev"
+  }, {
+    "name": "Arya"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipMAiBLHP0oU93et7rHYS_srD1uWvjrQNrkuRiir",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}

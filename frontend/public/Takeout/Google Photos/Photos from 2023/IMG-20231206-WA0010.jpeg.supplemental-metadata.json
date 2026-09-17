@@ -1,0 +1,32 @@
+{
+  "title": "IMG-20231206-WA0010.jpeg",
+  "description": "",
+  "imageViews": "3",
+  "creationTime": {
+    "timestamp": "1712085489",
+    "formatted": "Apr 2, 2024, 7:18:09 PM UTC"
+  },
+  "photoTakenTime": {
+    "timestamp": "1701852449",
+    "formatted": "Dec 6, 2023, 8:47:29 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "people": [{
+    "name": "Shivu"
+  }],
+  "url": "https://photos.google.com/photo/AF1QipP11F9tQoOU9f-ExEGNq3IKJpLYuGiLGJeh0x9O",
+  "googlePhotosOrigin": {
+    "mobileUpload": {
+      "deviceFolder": {
+        "localFolderName": ""
+      },
+      "deviceType": "ANDROID_PHONE"
+    }
+  }
+}
