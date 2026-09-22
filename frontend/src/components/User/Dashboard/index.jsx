@@ -27,6 +27,8 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import dayjs from "dayjs";
 import { useAuth } from "../../../context/AuthContext";
+import AmountInputWithCalculator from "../Calculator/AmountInputWithCalculator";
+import CalculatorModal from "../Calculator";
 
 const CATEGORY_COLORS = {
   "Food & Dining": "#FF6B6B",
@@ -46,6 +48,7 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
   const [stats, setStats] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
+  const [calcModalOpen, setCalcModalOpen] = useState(false);
   const [form] = Form.useForm();
   const [submitting, setSubmitting] = useState(false);
   const [scanning, setScanning] = useState(false);
@@ -409,7 +412,10 @@ const Dashboard = () => {
           </Form.Item>
 
           <Form.Item name="amount" label="Amount (₹)" rules={[{ required: true, message: "Please enter amount" }]}>
-            <InputNumber className="w-full" min={0.01} precision={2} placeholder="0.00" />
+            <AmountInputWithCalculator
+              placeholder="0.00 (Supports e.g. 500+250)"
+              onOpenCalculator={() => setCalcModalOpen(true)}
+            />
           </Form.Item>
 
           <Form.Item name="category" label="Category" rules={[{ required: true }]}>
@@ -457,6 +463,15 @@ const Dashboard = () => {
           </div>
         </Form>
       </Modal>
+
+      <CalculatorModal
+        open={calcModalOpen}
+        onClose={() => setCalcModalOpen(false)}
+        onApplyToTransaction={(amount) => {
+          form.setFieldsValue({ amount });
+          setCalcModalOpen(false);
+        }}
+      />
     </div>
   );
 };

@@ -8,10 +8,12 @@ import {
   TransactionOutlined,
   UserOutlined,
   RobotOutlined,
+  CalculatorOutlined,
 } from "@ant-design/icons";
 import { Layout, Image, Menu, Button, Avatar, Tooltip, Spin } from "antd";
 import { useAuth } from "../../../context/AuthContext";
 import AIAdvisor from "../AIAdvisor";
+import CalculatorModal from "../Calculator";
 
 const { Sider, Content, Header } = Layout;
 
@@ -66,6 +68,7 @@ const UserLayout = () => {
 
   const [open, setOpen] = useState(false);
   const [aiOpen, setAiOpen] = useState(false);
+  const [calcOpen, setCalcOpen] = useState(false);
 
   const handlenavigate = (menu) => {
     navigate(menu.key);
@@ -74,6 +77,10 @@ const UserLayout = () => {
   const handleLogout = async () => {
     await logout();
     navigate("/");
+  };
+
+  const handleApplyCalcAmount = (amount) => {
+    navigate("/app/user/transactions", { state: { prefillAmount: amount, openModal: true } });
   };
 
   if (loading) {
@@ -117,6 +124,14 @@ const UserLayout = () => {
           
           <div className="flex items-center gap-3">
             <Button
+              icon={<CalculatorOutlined className="!text-indigo-600 font-bold" />}
+              onClick={() => setCalcOpen(true)}
+              className="!border-indigo-200 hover:!border-indigo-400 !text-slate-700 !font-semibold shadow-2xs"
+            >
+              Calculator 🧮
+            </Button>
+
+            <Button
               type="primary"
               icon={<RobotOutlined />}
               onClick={() => setAiOpen(true)}
@@ -142,6 +157,11 @@ const UserLayout = () => {
         </Content>
 
         <AIAdvisor open={aiOpen} onClose={() => setAiOpen(false)} />
+        <CalculatorModal
+          open={calcOpen}
+          onClose={() => setCalcOpen(false)}
+          onApplyToTransaction={handleApplyCalcAmount}
+        />
       </Layout>
     </Layout>
   );

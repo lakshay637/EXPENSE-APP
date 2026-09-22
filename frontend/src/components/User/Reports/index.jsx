@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Card, Table, Tag, Button, Spin } from "antd";
-import { BarChartOutlined, DownloadOutlined, TrophyOutlined } from "@ant-design/icons";
+import { BarChartOutlined, DownloadOutlined, TrophyOutlined, FilePdfOutlined } from "@ant-design/icons";
 import {
   ResponsiveContainer,
   BarChart,
@@ -14,8 +14,11 @@ import {
 import axios from "axios";
 import { toast } from "react-toastify";
 import dayjs from "dayjs";
+import { useAuth } from "../../../context/AuthContext";
+import { downloadTransactionsPDF } from "../../../utils/pdfGenerator";
 
 const Reports = () => {
+  const { user } = useAuth();
   const [loading, setLoading] = useState(true);
   const [stats, setStats] = useState(null);
 
@@ -48,6 +51,23 @@ const Reports = () => {
       toast.success("Report downloaded successfully!");
     } catch (err) {
       toast.error("Failed to export report");
+    }
+  };
+
+  const handleExportPDF = async () => {
+    try {
+      toast.info("Generating PDF report...");
+      const { data: res } = await axios.get("/api/expense", { params: { limit: 1000 } });
+      const transactions = res.expenses || [];
+
+      downloadTransactionsPDF(transactions, {
+        userName: user?.fullname || "User",
+        reportTitle: "Analytics & Spending Financial Statement",
+        summaryStats: stats?.summary || null,
+      });
+      toast.success("📄 Financial PDF Report downloaded successfully!");
+    } catch (err) {
+      toast.error("Failed to download PDF report");
     }
   };
 
@@ -116,14 +136,23 @@ const Reports = () => {
           <h1 className="text-2xl font-bold text-slate-800">Financial Reports & Analytics</h1>
           <p className="text-slate-500 text-sm">Deep-dive analysis into your overall spending distribution and net cash flow.</p>
         </div>
-        <Button
-          type="primary"
-          icon={<DownloadOutlined />}
-          onClick={handleExportCSV}
-          className="!bg-[#FF735C] hover:!bg-[#e55a43] !border-none !font-bold"
-        >
-          Download Report CSV
-        </Button>
+        <div className="flex gap-3">
+          <Button
+            icon={<DownloadOutlined />}
+            onClick={handleExportCSV}
+            className="!border-slate-300"
+          >
+            Export CSV
+          </Button>
+          <Button
+            type="primary"
+            icon={<FilePdfOutlined />}
+            onClick={handleExportPDF}
+            className="!bg-[#FF735C] hover:!bg-[#e55a43] !border-none !font-bold"
+          >
+            Download PDF Report
+          </Button>
+        </div>
       </div>
 
       {/* Comparison Chart */}

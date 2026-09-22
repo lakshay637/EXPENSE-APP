@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import {
   Table,
   Button,
@@ -22,10 +23,16 @@ import {
   DownloadOutlined,
   FilterOutlined,
   ReloadOutlined,
+  CalculatorOutlined,
+  FilePdfOutlined,
 } from "@ant-design/icons";
 import axios from "axios";
 import { toast } from "react-toastify";
 import dayjs from "dayjs";
+import { useAuth } from "../../../context/AuthContext";
+import AmountInputWithCalculator from "../Calculator/AmountInputWithCalculator";
+import CalculatorModal from "../Calculator";
+import { downloadTransactionsPDF } from "../../../utils/pdfGenerator";
 
 const { RangePicker } = DatePicker;
 
@@ -45,6 +52,7 @@ const CATEGORIES = [
 const PAYMENT_METHODS = ["Cash", "Credit Card", "Debit Card", "UPI / NetBanking", "Other"];
 
 const Transactions = () => {
+  const location = useLocation();
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
   const [pagination, setPagination] = useState({ currentPage: 1, limit: 10, totalItems: 0 });
@@ -62,6 +70,7 @@ const Transactions = () => {
   const [form] = Form.useForm();
   const [submitting, setSubmitting] = useState(false);
   const [scanning, setScanning] = useState(false);
+  const [calcModalOpen, setCalcModalOpen] = useState(false);
 
   const handleReceiptScan = (file) => {
     setScanning(true);
@@ -128,6 +137,15 @@ const Transactions = () => {
     fetchTransactions(1);
   }, [type, category, paymentMethod, dateRange]);
 
+  useEffect(() => {
+    if (location.state?.openModal) {
+      openAddModal();
+      if (location.state?.prefillAmount) {
+        form.setFieldsValue({ amount: location.state.prefillAmount });
+      }
+    }
+  }, [location.state]);
+
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     fetchTransactions(1);
@@ -142,6 +160,7 @@ const Transactions = () => {
     fetchTransactions(1);
   };
 
+  const { user } = useAuth();
   const handleExportCSV = async () => {
     try {
       const response = await axios.get("/api/expense/export", { responseType: "blob" });
@@ -155,6 +174,41 @@ const Transactions = () => {
       toast.success("CSV export downloaded successfully!");
     } catch (err) {
       toast.error("Failed to export transactions CSV");
+    }
+  };
+
+  const handleExportPDF = async () => {
+    try {
+      toast.info("Preparing PDF statement...");
+      const params = {
+        page: 1,
+        limit: 1000,
+        search: search.trim(),
+        type,
+        category,
+        paymentMethod,
+      };
+
+      if (dateRange && dateRange[0] && dateRange[1]) {
+        params.startDate = dateRange[0].format("YYYY-MM-DD");
+        params.endDate = dateRange[1].format("YYYY-MM-DD");
+      }
+
+      const { data: res } = await axios.get("/api/expense", { params });
+      const exportList = res.expenses || data;
+
+      if (!exportList || exportList.length === 0) {
+        toast.warning("No transactions to export");
+        return;
+      }
+
+      downloadTransactionsPDF(exportList, {
+        userName: user?.fullname || "User",
+        reportTitle: "Filtered Transaction Report",
+      });
+      toast.success("📄 PDF downloaded successfully!");
+    } catch (err) {
+      toast.error("Failed to download PDF report");
     }
   };
 
@@ -319,6 +373,13 @@ const Transactions = () => {
             Export CSV
           </Button>
           <Button
+            icon={<FilePdfOutlined className="text-red-500" />}
+            onClick={handleExportPDF}
+            className="!border-slate-300 !text-slate-700 font-medium"
+          >
+            Download PDF
+          </Button>
+          <Button
             type="primary"
             icon={<PlusOutlined />}
             onClick={openAddModal}
@@ -467,7 +528,10 @@ const Transactions = () => {
           </Form.Item>
 
           <Form.Item name="amount" label="Amount (₹)" rules={[{ required: true, message: "Please enter amount" }]}>
-            <InputNumber className="w-full" min={0.01} precision={2} placeholder="0.00" />
+            <AmountInputWithCalculator
+              placeholder="0.00 (Supports e.g. 500+250)"
+              onOpenCalculator={() => setCalcModalOpen(true)}
+            />
           </Form.Item>
 
           <Form.Item name="category" label="Category" rules={[{ required: true }]}>
@@ -494,6 +558,15 @@ const Transactions = () => {
           </div>
         </Form>
       </Modal>
+
+      <CalculatorModal
+        open={calcModalOpen}
+        onClose={() => setCalcModalOpen(false)}
+        onApplyToTransaction={(amount) => {
+          form.setFieldsValue({ amount });
+          setCalcModalOpen(false);
+        }}
+      />
     </div>
   );
 };
