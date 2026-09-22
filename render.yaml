@@ -1,0 +1,38 @@
+services:
+  # Backend Web Service
+  - type: web
+    name: expense-tracker-backend
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 5050
+      - key: DB_URL
+        sync: false
+      - key: AUTH_SECRET
+        sync: false
+      - key: FORGOT_TOKEN_SECRET
+        sync: false
+      - key: DOMAIN
+        sync: false
+      - key: Sender_EMAIL
+        sync: false
+      - key: Sender_PASSWORD
+        sync: false
+
+  # Frontend Static Site
+  - type: web
+    name: expense-tracker-frontend
+    env: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_BASE_URL
+        sync: false
