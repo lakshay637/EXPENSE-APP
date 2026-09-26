@@ -1,0 +1,15 @@
+# Netlify Configuration for Expense App Frontend
+
+[build]
+  # Specify subfolder for frontend
+  base = "frontend"
+  # Build command inside frontend folder
+  command = "npm run build"
+  # Folder containing built static assets relative to base
+  publish = "dist"
+
+# Single Page Application (SPA) Redirect Rule for React Router
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

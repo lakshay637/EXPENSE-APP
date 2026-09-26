@@ -23,9 +23,8 @@ services:
         sync: false
 
   # Frontend Static Site
-  - type: web
+  - type: static
     name: expense-tracker-frontend
-    env: static
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
@@ -36,3 +35,4 @@ services:
     envVars:
       - key: VITE_BASE_URL
         sync: false
+
