@@ -9,8 +9,8 @@ app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
 // database connection
 import mongoose from "mongoose";
 mongoose.connect(process.env.DB_URL)
-.then(()=>console.log("Database connected!"))
-.catch(()=>console.log("Database not connected!"));
+.then(() => console.log("Database connected successfully!"))
+.catch((err) => console.error("Database connection failed:", err.message));
 
 import cookieParser from "cookie-parser";
 import cors from "cors";

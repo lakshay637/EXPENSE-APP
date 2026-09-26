@@ -1,4 +1,12 @@
 import nodemailer from "nodemailer";
+import dns from "dns";
+import dotenv from "dotenv";
+dotenv.config();
+
+// Force Node to prefer IPv4 over IPv6 for outbound SMTP connections (resolves ENETUNREACH on Render/cloud hosts)
+if (dns.setDefaultResultOrder) {
+  dns.setDefaultResultOrder('ipv4first');
+}
 
 export const sendMail = async (email, subject, template) => {
   try {
@@ -22,6 +30,7 @@ export const sendMail = async (email, subject, template) => {
       host,
       port,
       secure,
+      family: 4,
       auth: {
         user,
         pass,
