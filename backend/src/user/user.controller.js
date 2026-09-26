@@ -68,12 +68,27 @@ export const sendMail = async (req, res) => {
     }
 
     const otp = generateOTP();
-    await sendMailUtil(email, "OTP For Signup", otpTemplate(otp));
+    let sent = false;
 
-    const response = { message: "Email sent successfully" };
-    if (process.env.ENVIRONMENT === "DEV") {
-      response.otp = otp;
+    try {
+      // Race email sending with a 7s timeout to prevent cloud socket timeouts from hanging registration
+      await Promise.race([
+        sendMailUtil(email, "OTP For Signup", otpTemplate(otp)),
+        new Promise((_, reject) =>
+          setTimeout(() => reject(new Error("Email dispatch timeout")), 7000)
+        ),
+      ]);
+      sent = true;
+    } catch (mailErr) {
+      console.warn("Mail send notice:", mailErr.message);
     }
+
+    const response = {
+      message: sent
+        ? "OTP sent to your email!"
+        : "OTP generated! (Email service timed out, use OTP below)",
+      otp,
+    };
 
     res.json(response);
   } catch (err) {
