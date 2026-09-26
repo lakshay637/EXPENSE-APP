@@ -7,7 +7,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../../context/AuthContext";
-axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
+if (import.meta.env.VITE_BASE_URL) {
+  axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
+}
 
 const { Item } = Form;
 
@@ -33,7 +35,12 @@ const Login = () => {
       if(role === "user" || !role)
         return navigate("/app/user/dashboard");
     } catch (err) {
-      toast.error(err.response ? err.response.data.message : err.message);
+      const errMsg = err.response
+        ? (err.response.data?.message || `Server error (${err.response.status})`)
+        : (err.message === "Network Error" || !import.meta.env.VITE_BASE_URL
+            ? "Cannot connect to backend server. Ensure backend is deployed & VITE_BASE_URL is set in Netlify."
+            : err.message);
+      toast.error(errMsg);
     } finally {
       setLoading(false);
     }
