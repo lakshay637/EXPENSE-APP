@@ -26,7 +26,7 @@ export const sendMail = async (email, subject, template) => {
       return res;
     }
 
-    // 2. Fall back to Nodemailer SMTP
+    // 2. Fall back to Nodemailer SMTP with explicit IPv4 IP resolution to eliminate ENETUNREACH
     const user =
       process.env.MAIL_USER?.trim() ||
       process.env.Sender_EMAIL?.trim() ||
@@ -39,7 +39,7 @@ export const sendMail = async (email, subject, template) => {
       process.env.SENDER_PASSWORD?.trim() ||
       process.env.SENDER_PASS?.trim();
 
-    const host = process.env.MAIL_HOST?.trim() || "smtp.gmail.com";
+    const rawHost = process.env.MAIL_HOST?.trim() || "smtp.gmail.com";
     const customPort = process.env.MAIL_PORT ? Number(process.env.MAIL_PORT.trim()) : null;
     const from = process.env.MAIL_FROM?.trim() || user;
 
@@ -53,23 +53,29 @@ export const sendMail = async (email, subject, template) => {
     const port = customPort || 465;
     const secure = customPort ? customPort === 465 : true;
 
-    // Strict IPv4 DNS lookup to avoid ENETUNREACH
-    const forceIPv4Lookup = (hostname, options, callback) => {
-      dns.lookup(hostname, { family: 4, all: false }, (err, address) => {
-        if (err) return callback(err);
-        callback(null, address, 4);
-      });
-    };
+    // Explicitly resolve host to an IPv4 IP address string to prevent Node tls.connect from attempting IPv6
+    let resolvedHost = rawHost;
+    if (rawHost === "smtp.gmail.com") {
+      try {
+        const ipv4s = await dns.promises.resolve4("smtp.gmail.com");
+        if (ipv4s && ipv4s.length > 0) {
+          resolvedHost = ipv4s[0];
+        }
+      } catch (dnsErr) {
+        console.warn("DNS resolve4 warning, using hostname:", dnsErr.message);
+      }
+    }
 
     const transporter = nodemailer.createTransport({
-      host,
+      host: resolvedHost,
       port,
       secure,
-      family: 4,
-      lookup: forceIPv4Lookup,
-      connectionTimeout: 5000,
-      greetingTimeout: 5000,
-      socketTimeout: 5000,
+      tls: {
+        servername: rawHost,
+      },
+      connectionTimeout: 10000,
+      greetingTimeout: 10000,
+      socketTimeout: 10000,
       auth: {
         user,
         pass,
