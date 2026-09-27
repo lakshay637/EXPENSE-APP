@@ -203,7 +203,11 @@ export const forgotPassword = async (req, res) => {
       return res.status(400).json({ message: "Email is required" });
     }
 
-    const user = await UserModel.findOne({ email });
+    const cleanEmail = email.trim();
+    const user = await UserModel.findOne({
+      email: new RegExp(`^${cleanEmail}$`, "i"),
+    });
+
     if (!user) {
       return res.status(404).json({ message: "User does not exist with this email." });
     }
@@ -224,18 +228,20 @@ export const forgotPassword = async (req, res) => {
     const rawDomain = (clientDomain || process.env.DOMAIN || "http://localhost:5173").replace(/\/+$/, "");
     const link = `${rawDomain}/forgot-password?token=${token}`;
 
-    // Respond immediately to UI so frontend button never gets stuck!
+    // Await email dispatch so serverless environments (Netlify / Lambda) complete SMTP before function exit
+    try {
+      await sendMailUtil(
+        cleanEmail,
+        "Reset Password - Expense Tracker",
+        forgotPasswordTemplate(user.fullname, link),
+      );
+    } catch (mailErr) {
+      console.error("Failed to dispatch reset email:", mailErr.message);
+      return res.status(500).json({ message: `Email send failed: ${mailErr.message}` });
+    }
+
     res.json({
       message: "Password reset link sent to your email! Please check your inbox.",
-    });
-
-    // Send email asynchronously in background
-    sendMailUtil(
-      email,
-      "Reset Password - Expense Tracker",
-      forgotPasswordTemplate(user.fullname, link),
-    ).catch((mailErr) => {
-      console.warn("Background email send notice:", mailErr.message);
     });
   } catch (err) {
     console.error("forgotPassword error:", err);
