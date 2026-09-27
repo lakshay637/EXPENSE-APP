@@ -226,8 +226,7 @@ export const forgotPassword = async (req, res) => {
 
     // Respond immediately to UI so frontend button never gets stuck!
     res.json({
-      message: "Reset link generated! Please check your email inbox or use the instant link below.",
-      resetLink: link,
+      message: "Password reset link sent to your email! Please check your inbox.",
     });
 
     // Send email asynchronously in background
