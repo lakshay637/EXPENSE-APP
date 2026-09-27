@@ -108,6 +108,55 @@ const createToken = async (user) => {
   return token;
 };
 
+const getCookieOptions = () => {
+  const isDev = process.env.ENVIRONMENT === "DEV";
+  const cookieOptions = {
+    maxAge: 86400000,
+    httpOnly: true,
+    secure: !isDev,
+    sameSite: isDev ? "lax" : "none",
+  };
+  if (process.env.COOKIE_DOMAIN) {
+    const rawDomain = process.env.COOKIE_DOMAIN.trim()
+      .replace(/^https?:\/\//i, "")
+      .split("/")[0]
+      .split(":")[0];
+    if (rawDomain) {
+      cookieOptions.domain = rawDomain;
+    }
+  }
+  return cookieOptions;
+};
+
+const setAuthCookie = (res, token) => {
+  const options = getCookieOptions();
+  try {
+    res.cookie("authToken", token, options);
+  } catch (err) {
+    console.warn("Failed to set cookie with domain:", err.message);
+    delete options.domain;
+    try {
+      res.cookie("authToken", token, options);
+    } catch (e) {
+      console.warn("Failed to set fallback cookie:", e.message);
+    }
+  }
+};
+
+const clearAuthCookie = (res) => {
+  const options = getCookieOptions();
+  try {
+    res.clearCookie("authToken", options);
+  } catch (err) {
+    delete options.domain;
+    try {
+      res.clearCookie("authToken", options);
+    } catch (e) {
+      // ignore
+    }
+  }
+};
+
 export const login = async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -127,13 +176,8 @@ export const login = async (req, res) => {
     }
 
     const token = await createToken(user);
-    res.cookie("authToken", token, {
-      maxAge: 86400000,
-      domain:
-        process.env.ENVIRONMENT === "DEV" ? "localhost" : process.env.DOMAIN,
-      secure: process.env.ENVIRONMENT === "DEV" ? false : true,
-      httpOnly: true,
-    });
+    setAuthCookie(res, token);
+
     res.json({
       message: "Login success",
       role: user.role,
@@ -155,41 +199,47 @@ export const login = async (req, res) => {
 export const forgotPassword = async (req, res) => {
   try {
     const { email } = req.body;
-    const user = await UserModel.findOne({ email });
+    if (!email) {
+      return res.status(400).json({ message: "Email is required" });
+    }
 
+    const user = await UserModel.findOne({ email });
     if (!user) {
-      return res.status(404).json({ message: "User does not exist" });
+      return res.status(404).json({ message: "User does not exist with this email." });
     }
 
     const secret = process.env.FORGOT_TOKEN_SECRET || "forgot_secret";
     const token = jwt.sign({ id: user._id }, secret, {
-      expiresIn: "15m",
+      expiresIn: "30m",
     });
-    const domain = process.env.DOMAIN || "http://localhost:5173";
-    const link = `${domain}/forgot-password?token=${token}`;
 
-    let sent = false;
-    try {
-      sent = await sendMailUtil(
-        email,
-        "Reset Password",
-        forgotPasswordTemplate(user.fullname, link),
-      );
-    } catch (mailErr) {
-      console.error("Mail send error:", mailErr.message);
+    let clientDomain = req.get("origin");
+    if (!clientDomain && req.get("referer")) {
+      try {
+        clientDomain = new URL(req.get("referer")).origin;
+      } catch (e) {
+        clientDomain = null;
+      }
     }
+    const rawDomain = (clientDomain || process.env.DOMAIN || "http://localhost:5173").replace(/\/+$/, "");
+    const link = `${rawDomain}/forgot-password?token=${token}`;
 
-    const response = {
-      message: "Please check your email to reset your password",
-    };
+    // Respond immediately to UI so frontend button never gets stuck!
+    res.json({
+      message: "Reset link generated! Please check your email inbox or use the instant link below.",
+      resetLink: link,
+    });
 
-    if (process.env.ENVIRONMENT === "DEV" || !sent) {
-      response.resetLink = link;
-      response.message = "Password reset link generated. Check email or click below.";
-    }
-
-    res.json(response);
+    // Send email asynchronously in background
+    sendMailUtil(
+      email,
+      "Reset Password - Expense Tracker",
+      forgotPasswordTemplate(user.fullname, link),
+    ).catch((mailErr) => {
+      console.warn("Background email send notice:", mailErr.message);
+    });
   } catch (err) {
+    console.error("forgotPassword error:", err);
     res.status(500).json({ message: err.message });
   }
 };
@@ -219,7 +269,6 @@ export const resetPassword = async (req, res) => {
   }
 };
 
-
 export const getMe = async (req, res) => {
   try {
     const userId = req.user.id;
@@ -235,7 +284,7 @@ export const getMe = async (req, res) => {
 
 export const logoutUser = async (req, res) => {
   try {
-    res.clearCookie("authToken");
+    clearAuthCookie(res);
     return res.json({ message: "Logged out successfully" });
   } catch (err) {
     return res.status(500).json({ message: err.message });

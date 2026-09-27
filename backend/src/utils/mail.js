@@ -3,7 +3,7 @@ import dns from "dns";
 import dotenv from "dotenv";
 dotenv.config();
 
-// Force Node to prefer IPv4 over IPv6 for outbound SMTP connections (resolves ENETUNREACH on Render/cloud hosts)
+// Force Node to prefer IPv4 over IPv6 for outbound SMTP connections (resolves ENETUNREACH on cloud hosts)
 if (dns.setDefaultResultOrder) {
   dns.setDefaultResultOrder('ipv4first');
 }
@@ -31,6 +31,9 @@ export const sendMail = async (email, subject, template) => {
       port,
       secure,
       family: 4,
+      connectionTimeout: 7000,
+      greetingTimeout: 7000,
+      socketTimeout: 7000,
       auth: {
         user,
         pass,
@@ -46,7 +49,7 @@ export const sendMail = async (email, subject, template) => {
 
     return info;
   } catch (error) {
-    console.error("Mail send failed:", error);
+    console.error("Mail send failed:", error.message);
     throw error;
   }
 };

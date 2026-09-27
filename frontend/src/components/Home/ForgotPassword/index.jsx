@@ -8,7 +8,9 @@ import { Link } from "react-router-dom";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import HomeLayout from "../../../layout/HomeLayout";
 import { useEffect } from "react";
-axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
+if (import.meta.env.VITE_BASE_URL) {
+  axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
+}
 
 const { Item } = Form;
 
@@ -36,13 +38,16 @@ const ForgotPassword = () => {
     try {
       setLoading(true);
       setDevResetLink(null);
-      const { data } = await axios.post("/api/user/forgot-password", values);
+      const { data } = await axios.post("/api/user/forgot-password", values, { timeout: 15000 });
       toast.success(data.message || "Please check your email to reset your password");
       if (data.resetLink) {
         setDevResetLink(data.resetLink);
       }
     } catch (err) {
-      const message = err.response ? err.response.data.message : err.message;
+      let message = err.response?.data?.message || err.message;
+      if (err.code === 'ECONNABORTED' || err.message?.includes('timeout')) {
+        message = "Server is starting up (cold start). Please try clicking Submit once more.";
+      }
       toast.error(message);
     } finally {
       setLoading(false);
@@ -155,10 +160,10 @@ const ForgotPassword = () => {
                 </Item>
 
                 {devResetLink && (
-                  <div className="my-3 p-3 bg-amber-50 border border-amber-200 rounded text-center text-xs">
-                    <p className="font-semibold text-amber-800 mb-1">Dev Reset Link Generated:</p>
-                    <a href={devResetLink} className="text-indigo-600 underline font-bold break-all">
-                      Click here to reset password
+                  <div className="my-3 p-3 bg-orange-50 border border-orange-200 rounded text-center text-xs">
+                    <p className="font-semibold text-orange-800 mb-1">Instant Reset Link:</p>
+                    <a href={devResetLink} className="text-[#FF735C] underline font-bold break-all block mt-1">
+                      👉 Click here to reset your password directly
                     </a>
                   </div>
                 )}

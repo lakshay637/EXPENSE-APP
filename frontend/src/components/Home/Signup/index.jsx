@@ -6,7 +6,9 @@ import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import HomeLayout from "../../../layout/HomeLayout";
-axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
+if (import.meta.env.VITE_BASE_URL) {
+  axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
+}
 
 const { Item } = Form;
 

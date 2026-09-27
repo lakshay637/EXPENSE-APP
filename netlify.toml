@@ -1,14 +1,24 @@
-# Netlify Configuration for Expense App Frontend
+# Netlify Deployment Configuration for Expense App
 
 [build]
-  # Specify subfolder for frontend
+  # Subfolder containing frontend React application
   base = "frontend"
-  # Build command inside frontend folder
+  # Build command executed in the base directory
   command = "npm run build"
-  # Folder containing built static assets relative to base
+  # Output directory for production build assets
   publish = "dist"
 
-# Single Page Application (SPA) Redirect Rule for React Router
+[functions]
+  directory = "../netlify/functions"
+  node_bundler = "esbuild"
+
+# Redirect /api calls to Netlify Serverless Functions (All-in-One Netlify Setup)
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+# Single Page Application (SPA) Fallback for React Router v7
 [[redirects]]
   from = "/*"
   to = "/index.html"
