@@ -202,12 +202,6 @@ const Signup = () => {
                     Verify OTP & Create Account
                   </Button>
                 </Item>
-
-                {serverOtp && (
-                  <div className="p-3 bg-indigo-50 border border-indigo-200 rounded-xl text-center text-xs text-indigo-900 my-2 font-medium">
-                    🔑 Dev Helper OTP: <span className="font-bold text-indigo-700 font-mono">{serverOtp}</span>
-                  </div>
-                )}
               </Form>
             )}
 

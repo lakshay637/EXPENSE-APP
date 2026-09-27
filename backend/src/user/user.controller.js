@@ -61,36 +61,32 @@ export const sendMail = async (req, res) => {
     if (!email) {
       return res.status(400).json({ message: "Email is required" });
     }
-    // do not send OTP if email already registered
-    const existing = await UserModel.findOne({ email });
+
+    const cleanEmail = email.trim();
+    // do not send OTP if email already registered (case-insensitive)
+    const existing = await UserModel.findOne({
+      email: new RegExp(`^${cleanEmail}$`, "i"),
+    });
     if (existing) {
       return res.status(409).json({ message: "Email already registered" });
     }
 
     const otp = generateOTP();
-    let sent = false;
 
     try {
-      // Race email sending with a 7s timeout to prevent cloud socket timeouts from hanging registration
-      await Promise.race([
-        sendMailUtil(email, "OTP For Signup", otpTemplate(otp)),
-        new Promise((_, reject) =>
-          setTimeout(() => reject(new Error("Email dispatch timeout")), 7000)
-        ),
-      ]);
-      sent = true;
+      await sendMailUtil(
+        cleanEmail,
+        "OTP For Signup - Expense Tracker",
+        otpTemplate(otp),
+      );
+      res.json({
+        message: "OTP sent to your email! Please check your inbox.",
+        otp,
+      });
     } catch (mailErr) {
-      console.warn("Mail send notice:", mailErr.message);
+      console.error("Mail send error:", mailErr.message);
+      res.status(500).json({ message: `Failed to send OTP email: ${mailErr.message}` });
     }
-
-    const response = {
-      message: sent
-        ? "OTP sent to your email!"
-        : "OTP generated! (Email service timed out, use OTP below)",
-      otp,
-    };
-
-    res.json(response);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
