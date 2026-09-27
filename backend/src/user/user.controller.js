@@ -160,7 +160,15 @@ const clearAuthCookie = (res) => {
 export const login = async (req, res) => {
   try {
     const { email, password } = req.body;
-    const user = await UserModel.findOne({ email });
+    if (!email || !password) {
+      return res.status(400).json({ message: "Email and password are required!" });
+    }
+
+    const cleanEmail = email.trim();
+    const user = await UserModel.findOne({
+      email: new RegExp(`^${cleanEmail}$`, "i"),
+    });
+
     if (!user) return res.status(404).json({ message: "User not found!" });
 
     const isLogged = await isValidPassword(password, user.password);
