@@ -23,7 +23,6 @@ const ForgotPassword = () => {
 
   const [loading, setLoading] = useState(false);
   const [token, setToken] = useState(null);
-  const [resetLink, setResetLink] = useState(null);
 
   useEffect(() => {
     const tok = params.get("token");
@@ -37,12 +36,8 @@ const ForgotPassword = () => {
   const onFinish = async (values) => {
     try {
       setLoading(true);
-      setResetLink(null);
       const { data } = await axios.post("/api/user/forgot-password", values, { timeout: 15000 });
       toast.success(data.message || "Please check your email to reset your password");
-      if (data.resetLink) {
-        setResetLink(data.resetLink);
-      }
     } catch (err) {
       let message = err.response?.data?.message || err.message;
       if (err.code === 'ECONNABORTED' || err.message?.includes('timeout')) {
@@ -158,15 +153,6 @@ const ForgotPassword = () => {
                     Submit
                   </Button>
                 </Item>
-
-                {resetLink && (
-                  <div className="my-3 p-3 bg-slate-50 border border-slate-200 rounded text-center text-xs">
-                    <p className="font-semibold text-slate-700 mb-1">Direct Password Reset:</p>
-                    <a href={resetLink} className="text-[#FF735C] underline font-bold break-all block mt-1">
-                      👉 Click here to set new password directly
-                    </a>
-                  </div>
-                )}
 
               </Form>
             )}

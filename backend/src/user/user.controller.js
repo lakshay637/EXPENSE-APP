@@ -228,28 +228,19 @@ export const forgotPassword = async (req, res) => {
     const rawDomain = (clientDomain || process.env.DOMAIN || "http://localhost:5173").replace(/\/+$/, "");
     const link = `${rawDomain}/forgot-password?token=${token}`;
 
-    let emailSent = false;
-
     try {
       await sendMailUtil(
         cleanEmail,
         "Reset Password - Expense Tracker",
         forgotPasswordTemplate(user.fullname, link),
       );
-      emailSent = true;
-    } catch (mailErr) {
-      console.warn("SMTP email send failed/timed out on cloud container:", mailErr.message);
-    }
-
-    if (emailSent) {
-      return res.json({
+      res.json({
         message: "Password reset link sent to your email! Please check your inbox.",
       });
-    } else {
-      // If cloud host blocks raw SMTP sockets, return the link on-screen as a direct fallback
-      return res.json({
-        message: "Password reset link generated! (Cloud SMTP connection blocked, click link below):",
-        resetLink: link,
+    } catch (mailErr) {
+      console.error("SMTP email send error:", mailErr.message);
+      res.status(500).json({
+        message: `Failed to send email: ${mailErr.message}`,
       });
     }
   } catch (err) {
