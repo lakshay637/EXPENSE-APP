@@ -110,7 +110,13 @@ const Signup = () => {
             <ToastContainer />
 
             {!formValues ? (
-              <Form name="otp-form" layout="vertical" onFinish={sendOtp}>
+              <Form
+                name="otp-form"
+                layout="vertical"
+                onFinish={sendOtp}
+                form={signupForm}
+                initialValues={formValues || {}}
+              >
                 <Item
                   name="fullname"
                   label={<span className="text-slate-700 text-xs font-semibold">Full Name</span>}
@@ -167,9 +173,26 @@ const Signup = () => {
                     block
                     className="!bg-gradient-to-r !from-emerald-600 !to-emerald-500 !text-white !font-bold !h-12 rounded-xl !border-none hover:opacity-95 shadow-md"
                   >
-                    Send Verification OTP
+                    {loading ? "Sending Email OTP..." : "Send Verification OTP"}
                   </Button>
                 </Item>
+
+                <div className="text-center pt-2">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const values = signupForm.getFieldsValue();
+                      if (!values.email) {
+                        toast.info("Please fill in your details first, then click Enter OTP.");
+                        return;
+                      }
+                      setFormValues(values);
+                    }}
+                    className="text-xs text-indigo-600 hover:underline font-semibold bg-indigo-50 px-3 py-1.5 rounded-lg border border-indigo-100 inline-block"
+                  >
+                    Already received OTP code? Enter OTP ➔
+                  </button>
+                </div>
               </Form>
             ) : (
               <Form
@@ -178,7 +201,7 @@ const Signup = () => {
                 onFinish={verifyOtp}
                 form={signupForm}
               >
-                <div className="mb-4 text-center space-y-1">
+                <div className="mb-4 text-center space-y-2">
                   <span className="text-xs text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200 font-semibold block">
                     OTP sent to {formValues.email}
                   </span>
@@ -187,6 +210,13 @@ const Signup = () => {
                       (Demo Mode Code: <strong className="text-emerald-600">{serverOtpHint}</strong>)
                     </span>
                   )}
+                  <button
+                    type="button"
+                    onClick={() => setFormValues(null)}
+                    className="text-xs text-indigo-600 hover:underline font-medium block mx-auto"
+                  >
+                    ← Edit Details / Change Email
+                  </button>
                 </div>
 
                 <Item

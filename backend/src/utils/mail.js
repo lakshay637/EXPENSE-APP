@@ -11,7 +11,31 @@ if (dns.setDefaultResultOrder) {
 
 export const sendMail = async (email, subject, template) => {
   try {
-    // 1. If SendGrid API key is configured, use SendGrid HTTPS REST API (never blocked on serverless containers)
+    // 1. If Resend API key is configured, use Resend HTTPS REST API (never blocked on cloud hosts)
+    if (process.env.RESEND_API_KEY) {
+      const fromEmail = process.env.Sender_EMAIL || process.env.MAIL_USER || "onboarding@resend.dev";
+      const resendRes = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${process.env.RESEND_API_KEY.trim()}`,
+        },
+        body: JSON.stringify({
+          from: fromEmail.includes("<") ? fromEmail : `Expense Tracker <${fromEmail}>`,
+          to: [email],
+          subject,
+          html: template,
+        }),
+      });
+      const resendData = await resendRes.json();
+      if (!resendRes.ok) {
+        throw new Error(resendData.message || resendData.name || "Resend API dispatch failed");
+      }
+      console.log("✅ Email sent via Resend API!");
+      return resendData;
+    }
+
+    // 2. If SendGrid API key is configured, use SendGrid HTTPS REST API (never blocked on serverless containers)
     if (process.env.SENDGRID_API_KEY) {
       sgMail.setApiKey(process.env.SENDGRID_API_KEY.trim());
       const fromEmail = process.env.Sender_EMAIL || process.env.MAIL_USER || "no-reply@expensapp.com";
