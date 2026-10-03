@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Card, Form, Button, Input } from "antd";
-import { LockOutlined, UserOutlined, PhoneOutlined } from "@ant-design/icons";
+import { LockOutlined, UserOutlined, PhoneOutlined, SafetyOutlined, ArrowLeftOutlined, CheckCircleOutlined } from "@ant-design/icons";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import HomeLayout from "../../../layout/HomeLayout";
 import { useAuth } from "../../../context/AuthContext";
+
 if (import.meta.env.VITE_BASE_URL) {
   axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
 }
@@ -14,10 +15,13 @@ if (import.meta.env.VITE_BASE_URL) {
 const { Item } = Form;
 
 const Signup = () => {
-  const [signupForm] = Form.useForm();
+  const [initialForm] = Form.useForm();
+  const [otpForm] = Form.useForm();
 
   const navigate = useNavigate();
   const { login: authLogin } = useAuth();
+  
+  const [step, setStep] = useState("form"); // "form" | "otp"
   const [formValues, setFormValues] = useState(null);
   const [serverOtpHint, setServerOtpHint] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -27,23 +31,37 @@ const Signup = () => {
       setLoading(true);
       const { data } = await axios.post("/api/user/send-mail", values);
       setFormValues(values);
+      setStep("otp");
+
       if (data.devOtp) {
         setServerOtpHint(data.devOtp);
+        otpForm.setFieldsValue({ otp: data.devOtp });
       }
-      toast.success(data.message || "OTP sent to your email!");
+
+      toast.success(data.message || "OTP generated! Please check your inbox or use the code below.");
     } catch (error) {
       const msg =
         error.response?.data?.message || error.message || "Failed to send OTP";
       toast.error(msg);
-      setFormValues(null);
     } finally {
       setLoading(false);
     }
   };
 
+  const handleManualEnterOtp = () => {
+    const values = initialForm.getFieldsValue();
+    if (!values.email || !values.fullname || !values.password) {
+      toast.info("Please fill out your Name, Email, and Password first.");
+      return;
+    }
+    setFormValues(values);
+    setStep("otp");
+  };
+
   const verifyOtp = async ({ otp }) => {
     if (!formValues) {
-      toast.error("Form session expired. Please re-enter details.");
+      toast.error("Form session expired. Please re-enter your details.");
+      setStep("form");
       return;
     }
 
@@ -102,19 +120,24 @@ const Signup = () => {
           <Card className="w-full max-w-md !bg-white !border-slate-200/80 shadow-xl rounded-2xl p-2 md:p-4">
             <div className="text-center mb-6">
               <h2 className="font-extrabold text-2xl text-slate-900 tracking-tight">
-                Create an Account
+                {step === "form" ? "Create an Account" : "Verify OTP Code"}
               </h2>
-              <p className="text-slate-500 text-xs mt-1 font-medium">Register to start managing your daily budget</p>
+              <p className="text-slate-500 text-xs mt-1 font-medium">
+                {step === "form"
+                  ? "Register to start managing your daily budget"
+                  : `Enter the 6-digit code sent to ${formValues?.email || "your email"}`}
+              </p>
             </div>
 
             <ToastContainer />
 
-            {!formValues ? (
+            {step === "form" ? (
               <Form
+                key="step-register-form"
                 name="otp-form"
                 layout="vertical"
                 onFinish={sendOtp}
-                form={signupForm}
+                form={initialForm}
                 initialValues={formValues || {}}
               >
                 <Item
@@ -173,22 +196,15 @@ const Signup = () => {
                     block
                     className="!bg-gradient-to-r !from-emerald-600 !to-emerald-500 !text-white !font-bold !h-12 rounded-xl !border-none hover:opacity-95 shadow-md"
                   >
-                    {loading ? "Sending Email OTP..." : "Send Verification OTP"}
+                    {loading ? "Sending OTP Code..." : "Send Verification OTP"}
                   </Button>
                 </Item>
 
                 <div className="text-center pt-2">
                   <button
                     type="button"
-                    onClick={() => {
-                      const values = signupForm.getFieldsValue();
-                      if (!values.email) {
-                        toast.info("Please fill in your details first, then click Enter OTP.");
-                        return;
-                      }
-                      setFormValues(values);
-                    }}
-                    className="text-xs text-indigo-600 hover:underline font-semibold bg-indigo-50 px-3 py-1.5 rounded-lg border border-indigo-100 inline-block"
+                    onClick={handleManualEnterOtp}
+                    className="text-xs text-indigo-600 hover:underline font-semibold bg-indigo-50 px-3 py-1.5 rounded-lg border border-indigo-100 inline-block cursor-pointer"
                   >
                     Already received OTP code? Enter OTP ➔
                   </button>
@@ -196,36 +212,49 @@ const Signup = () => {
               </Form>
             ) : (
               <Form
+                key="step-verify-otp-form"
                 name="signup-form"
                 layout="vertical"
                 onFinish={verifyOtp}
-                form={signupForm}
+                form={otpForm}
               >
                 <div className="mb-4 text-center space-y-2">
-                  <span className="text-xs text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200 font-semibold block">
-                    OTP sent to {formValues.email}
-                  </span>
+                  <div className="inline-flex items-center gap-1.5 text-xs text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200 font-semibold">
+                    <CheckCircleOutlined /> Verification code sent to {formValues?.email}
+                  </div>
+
                   {serverOtpHint && (
-                    <span className="text-[11px] text-slate-500 font-mono block">
-                      (Demo Mode Code: <strong className="text-emerald-600">{serverOtpHint}</strong>)
-                    </span>
+                    <div className="bg-slate-50 border border-slate-200 p-2.5 rounded-xl space-y-1">
+                      <span className="text-xs text-slate-600 font-medium block">
+                        Verification Code (Auto-Detected): <strong className="text-emerald-600 font-mono text-sm tracking-wider">{serverOtpHint}</strong>
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => otpForm.setFieldsValue({ otp: serverOtpHint })}
+                        className="text-[11px] text-indigo-600 hover:text-indigo-800 font-bold underline cursor-pointer"
+                      >
+                        ⚡ Click here to auto-fill "{serverOtpHint}"
+                      </button>
+                    </div>
                   )}
+
                   <button
                     type="button"
-                    onClick={() => setFormValues(null)}
-                    className="text-xs text-indigo-600 hover:underline font-medium block mx-auto"
+                    onClick={() => setStep("form")}
+                    className="text-xs text-slate-500 hover:text-slate-800 font-medium inline-flex items-center gap-1 cursor-pointer pt-1"
                   >
-                    ← Edit Details / Change Email
+                    <ArrowLeftOutlined /> Edit Details / Resend Email
                   </button>
                 </div>
 
                 <Item
                   name="otp"
-                  label={<span className="text-slate-700 text-xs font-semibold">Enter OTP Code</span>}
+                  label={<span className="text-slate-700 text-xs font-semibold">Enter 6-Digit OTP Code</span>}
                   rules={[{ required: true, message: "Please enter the OTP" }]}
                 >
                   <Input
-                    placeholder="Enter 6-digit OTP"
+                    prefix={<SafetyOutlined className="text-slate-400" />}
+                    placeholder="123456"
                     className="!bg-slate-50 !border-slate-300 !text-slate-900 !h-11 text-center font-mono text-lg rounded-xl tracking-widest"
                   />
                 </Item>
@@ -258,4 +287,5 @@ const Signup = () => {
     </HomeLayout>
   );
 };
+
 export default Signup;
