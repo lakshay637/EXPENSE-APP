@@ -11,9 +11,16 @@ dotenv.config();
 
 const app = express();
 
-// Middleware to ensure DB connection before handling API routes
+// Middleware to ensure DB connection attempt before handling API routes
 app.use(async (req, res, next) => {
-  await connectDB();
+  try {
+    await Promise.race([
+      connectDB(),
+      new Promise((res) => setTimeout(res, 3000)),
+    ]);
+  } catch (e) {
+    console.warn("DB connection middleware warning:", e.message);
+  }
   next();
 });
 
