@@ -360,6 +360,10 @@ const Transactions = () => {
     },
   ];
 
+  const filteredIncome = data.reduce((acc, curr) => (curr.type === "income" ? acc + (Number(curr.amount) || 0) : acc), 0);
+  const filteredExpense = data.reduce((acc, curr) => (curr.type === "expense" ? acc + (Number(curr.amount) || 0) : acc), 0);
+  const filteredNet = filteredIncome - filteredExpense;
+
   return (
     <div className="space-y-6">
       {/* Header Bar */}
@@ -460,6 +464,36 @@ const Transactions = () => {
           </Button>
         </div>
       </Card>
+
+      {/* Filtered Summary KPIs */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="bg-emerald-50/80 border border-emerald-200/80 p-4 rounded-xl flex items-center justify-between">
+          <div>
+            <span className="text-xs font-bold text-emerald-800 uppercase tracking-wider">Filtered Income</span>
+            <div className="text-lg font-bold text-emerald-700 mt-0.5">
+              +₹{filteredIncome.toLocaleString("en-IN", { minimumFractionDigits: 2 })}
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-rose-50/80 border border-rose-200/80 p-4 rounded-xl flex items-center justify-between">
+          <div>
+            <span className="text-xs font-bold text-rose-800 uppercase tracking-wider">Filtered Expenses</span>
+            <div className="text-lg font-bold text-rose-700 mt-0.5">
+              -₹{filteredExpense.toLocaleString("en-IN", { minimumFractionDigits: 2 })}
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-indigo-50/80 border border-indigo-200/80 p-4 rounded-xl flex items-center justify-between">
+          <div>
+            <span className="text-xs font-bold text-indigo-800 uppercase tracking-wider">Filtered Net Flow</span>
+            <div className={`text-lg font-bold mt-0.5 ${filteredNet >= 0 ? "text-indigo-700" : "text-rose-700"}`}>
+              ₹{filteredNet.toLocaleString("en-IN", { minimumFractionDigits: 2 })}
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Main Transactions Table */}
       <Card className="shadow-sm border-slate-100 rounded-xl">

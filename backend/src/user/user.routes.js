@@ -8,6 +8,7 @@ import {
   getMe,
   logoutUser,
   updateProfile,
+  changePassword,
 } from "./user.controller.js";
 import { authMiddleware } from "../middleware/auth.middleware.js";
 
@@ -36,5 +37,8 @@ userRouter.post("/logout", authMiddleware, logoutUser);
 
 //@put /api/user/profile
 userRouter.put("/profile", authMiddleware, updateProfile);
+
+//@put /api/user/change-password
+userRouter.put("/change-password", authMiddleware, changePassword);
 
 export default userRouter;

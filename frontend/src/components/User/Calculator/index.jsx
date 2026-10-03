@@ -131,7 +131,6 @@ const CalculatorModal = ({ open, onClose, onApplyToTransaction }) => {
 
   const tipAmount = (billTotal * tipPercent) / 100;
   const grandTotalBill = billTotal + tipAmount;
-  const perPersonShare = peopleCount > 0 ? grandTotalTotalBill => grandTotalBill / peopleCount : 0;
   const perPersonAmount = peopleCount > 0 ? Math.round((grandTotalBill / peopleCount) * 100) / 100 : 0;
 
   // --- TAB 3: Tax / GST & Discount State ---

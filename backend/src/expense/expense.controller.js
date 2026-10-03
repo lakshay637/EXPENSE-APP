@@ -409,41 +409,59 @@ export const scanReceipt = async (req, res) => {
     }
 
     const nameLower = (filename || "").toLowerCase();
+    let rawText = nameLower;
+
+    if (image && typeof image === "string") {
+      try {
+        const decoded = Buffer.from(image.split(",")[1] || image, "base64").toString("utf-8");
+        rawText += " " + decoded.toLowerCase();
+      } catch (e) {
+        // Not plain text base64
+      }
+    }
+
     let title = "Scanned Receipt Transaction";
     let category = "Other";
     let amount = 350.0;
     let paymentMethod = "UPI / NetBanking";
 
-    if (nameLower.includes("food") || nameLower.includes("zomato") || nameLower.includes("swiggy") || nameLower.includes("cafe") || nameLower.includes("restaurant") || nameLower.includes("starbucks") || nameLower.includes("diner")) {
+    if (rawText.includes("food") || rawText.includes("zomato") || rawText.includes("swiggy") || rawText.includes("cafe") || rawText.includes("restaurant") || rawText.includes("starbucks") || rawText.includes("diner") || rawText.includes("mcdonald")) {
       title = "Dining & Food Receipt";
       category = "Food & Dining";
       amount = 480.0;
-    } else if (nameLower.includes("fuel") || nameLower.includes("petrol") || nameLower.includes("shell") || nameLower.includes("uber") || nameLower.includes("ola") || nameLower.includes("cab") || nameLower.includes("metro")) {
+    } else if (rawText.includes("fuel") || rawText.includes("petrol") || rawText.includes("shell") || rawText.includes("uber") || rawText.includes("ola") || rawText.includes("cab") || rawText.includes("metro")) {
       title = "Travel & Fuel Paper";
       category = "Transportation";
       amount = 1250.0;
       paymentMethod = "Credit Card";
-    } else if (nameLower.includes("bill") || nameLower.includes("electricity") || nameLower.includes("wifi") || nameLower.includes("recharge") || nameLower.includes("utility")) {
+    } else if (rawText.includes("bill") || rawText.includes("electricity") || rawText.includes("wifi") || rawText.includes("recharge") || rawText.includes("utility")) {
       title = "Utility Bill Payment";
       category = "Bills & Utilities";
       amount = 1890.0;
-    } else if (nameLower.includes("mart") || nameLower.includes("walmart") || nameLower.includes("amazon") || nameLower.includes("shopping") || nameLower.includes("store")) {
+    } else if (rawText.includes("mart") || rawText.includes("walmart") || rawText.includes("amazon") || rawText.includes("shopping") || rawText.includes("store") || rawText.includes("supermarket")) {
       title = "Store Purchase Paper";
       category = "Shopping";
       amount = 899.0;
-    } else if (nameLower.includes("medical") || nameLower.includes("pharmacy") || nameLower.includes("doctor") || nameLower.includes("hospital")) {
+    } else if (rawText.includes("medical") || rawText.includes("pharmacy") || rawText.includes("doctor") || rawText.includes("hospital") || rawText.includes("health")) {
       title = "Medical Bill Paper";
       category = "Health & Medical";
       amount = 650.0;
     }
 
-    // Try extracting numbers from filename if available (e.g. receipt_500.jpg -> 500)
-    const matches = filename ? filename.match(/\d+[\.\d]*/) : null;
-    if (matches && matches[0]) {
-      const parsedAmt = parseFloat(matches[0]);
-      if (parsedAmt > 0 && parsedAmt < 500000) {
-        amount = parsedAmt;
+    // Try extracting explicit amount patterns (e.g., total: 450, 1200.50, receipt_500)
+    const amountRegex = /(?:total|amount|rs|inr|\$|₹)\s*:?\s*(\d+(?:\.\d{1,2})?)|(\d+(?:\.\d{1,2})?)/gi;
+    let match;
+    const foundAmounts = [];
+    while ((match = amountRegex.exec(rawText)) !== null) {
+      const val = parseFloat(match[1] || match[2]);
+      if (val > 0 && val < 1000000) {
+        foundAmounts.push(val);
       }
+    }
+
+    if (foundAmounts.length > 0) {
+      // Pick the max or realistic parsed amount
+      amount = foundAmounts[0];
     }
 
     const todayStr = new Date().toISOString().split("T")[0];

@@ -145,8 +145,29 @@ const AIAdvisor = ({ open, onClose }) => {
             </div>
           )}
 
+          {/* Quick Prompt Chips */}
+          <div className="pt-2 border-t border-slate-100">
+            <span className="text-[11px] font-bold text-slate-500 block mb-1.5 uppercase tracking-wider">Suggested Questions</span>
+            <div className="flex flex-wrap gap-1.5">
+              {[
+                "How can I cut expenses?",
+                "Explain my health score",
+                "How to increase my savings?",
+              ].map((chip, idx) => (
+                <button
+                  key={idx}
+                  type="button"
+                  onClick={() => fetchAIInsights(chip)}
+                  className="px-2.5 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-medium text-[11px] rounded-full border border-indigo-200 transition-all active:scale-95"
+                >
+                  ✨ {chip}
+                </button>
+              ))}
+            </div>
+          </div>
+
           {/* Chat Input */}
-          <form onSubmit={handleSendPrompt} className="pt-3 border-t border-slate-100">
+          <form onSubmit={handleSendPrompt} className="pt-2">
             <Input.Search
               placeholder="Ask AI e.g. How can I save ₹5,000?"
               value={prompt}

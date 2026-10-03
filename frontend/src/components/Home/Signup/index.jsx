@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Card, Form, Button, Input } from "antd";
 import { LockOutlined, UserOutlined, PhoneOutlined } from "@ant-design/icons";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import HomeLayout from "../../../layout/HomeLayout";
+import { useAuth } from "../../../context/AuthContext";
 if (import.meta.env.VITE_BASE_URL) {
   axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
 }
@@ -15,8 +16,10 @@ const { Item } = Form;
 const Signup = () => {
   const [signupForm] = Form.useForm();
 
+  const navigate = useNavigate();
+  const { login: authLogin } = useAuth();
   const [formValues, setFormValues] = useState(null);
-  const [serverOtp, setServerOtp] = useState(null);
+  const [serverOtpHint, setServerOtpHint] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const sendOtp = async (values) => {
@@ -24,14 +27,14 @@ const Signup = () => {
       setLoading(true);
       const { data } = await axios.post("/api/user/send-mail", values);
       setFormValues(values);
-      signupForm.resetFields();
-      setServerOtp(data.otp || null);
-      toast.success(data.message || "OTP sent");
+      if (data.devOtp) {
+        setServerOtpHint(data.devOtp);
+      }
+      toast.success(data.message || "OTP sent to your email!");
     } catch (error) {
       const msg =
-        error.response?.data?.message || error.message || "Send failed";
+        error.response?.data?.message || error.message || "Failed to send OTP";
       toast.error(msg);
-      setServerOtp(null);
       setFormValues(null);
     } finally {
       setLoading(false);
@@ -39,25 +42,26 @@ const Signup = () => {
   };
 
   const verifyOtp = async ({ otp }) => {
-    if (!serverOtp) {
-      toast.error("No OTP to verify");
-      return;
-    }
-    if (String(otp).trim() !== String(serverOtp).trim()) {
-      toast.error("Invalid OTP");
+    if (!formValues) {
+      toast.error("Form session expired. Please re-enter details.");
       return;
     }
 
     try {
       setLoading(true);
-      // create user after OTP verified
-      await axios.post("/api/user/signup", formValues);
-      toast.success("Signup successful");
-      setServerOtp(null);
-      setFormValues(null);
+      const payload = {
+        ...formValues,
+        otp: String(otp).trim(),
+      };
+      const { data } = await axios.post("/api/user/signup", payload);
+      toast.success(data.message || "Account created successfully!");
+      if (data.token && data.user) {
+        authLogin(data.token, data.user);
+      }
+      navigate("/app/user/dashboard");
     } catch (error) {
       const msg =
-        error.response?.data?.message || error.message || "Signup failed";
+        error.response?.data?.message || error.message || "Signup verification failed";
       toast.error(msg);
     } finally {
       setLoading(false);
@@ -105,7 +109,7 @@ const Signup = () => {
 
             <ToastContainer />
 
-            {!serverOtp ? (
+            {!formValues ? (
               <Form name="otp-form" layout="vertical" onFinish={sendOtp}>
                 <Item
                   name="fullname"
@@ -174,10 +178,15 @@ const Signup = () => {
                 onFinish={verifyOtp}
                 form={signupForm}
               >
-                <div className="mb-4 text-center">
-                  <span className="text-xs text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200 font-semibold">
-                    OTP sent to your email
+                <div className="mb-4 text-center space-y-1">
+                  <span className="text-xs text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200 font-semibold block">
+                    OTP sent to {formValues.email}
                   </span>
+                  {serverOtpHint && (
+                    <span className="text-[11px] text-slate-500 font-mono block">
+                      (Demo Mode Code: <strong className="text-emerald-600">{serverOtpHint}</strong>)
+                    </span>
+                  )}
                 </div>
 
                 <Item

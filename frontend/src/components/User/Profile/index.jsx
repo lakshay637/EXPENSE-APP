@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Card, Form, Input, InputNumber, Button, Divider, Avatar } from "antd";
-import { UserOutlined, PhoneOutlined, MailOutlined, WalletOutlined, SaveOutlined } from "@ant-design/icons";
+import { UserOutlined, PhoneOutlined, MailOutlined, WalletOutlined, SaveOutlined, LockOutlined, KeyOutlined } from "@ant-design/icons";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { useAuth } from "../../../context/AuthContext";
@@ -8,7 +8,9 @@ import { useAuth } from "../../../context/AuthContext";
 const Profile = () => {
   const { user, updateUser } = useAuth();
   const [form] = Form.useForm();
+  const [passwordForm] = Form.useForm();
   const [submitting, setSubmitting] = useState(false);
+  const [pwdSubmitting, setPwdSubmitting] = useState(false);
 
   useEffect(() => {
     if (user) {
@@ -41,11 +43,31 @@ const Profile = () => {
     }
   };
 
+  const onChangePassword = async (values) => {
+    if (values.newPassword !== values.confirmPassword) {
+      return toast.error("New passwords do not match!");
+    }
+
+    try {
+      setPwdSubmitting(true);
+      const { data } = await axios.put("/api/user/change-password", {
+        currentPassword: values.currentPassword,
+        newPassword: values.newPassword,
+      });
+      toast.success(data.message || "Password changed successfully!");
+      passwordForm.resetFields();
+    } catch (err) {
+      toast.error(err.response?.data?.message || "Failed to change password");
+    } finally {
+      setPwdSubmitting(false);
+    }
+  };
+
   return (
     <div className="max-w-3xl mx-auto space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-slate-800">Account & Budget Settings</h1>
-        <p className="text-slate-500 text-sm">Manage your profile information and monthly spending limits.</p>
+        <h1 className="text-2xl font-bold text-slate-800">Account & Security Settings</h1>
+        <p className="text-slate-500 text-sm">Manage your profile details, monthly budget targets, and security credentials.</p>
       </div>
 
       <Card className="shadow-sm border-slate-100 rounded-2xl">
@@ -102,7 +124,37 @@ const Profile = () => {
               loading={submitting}
               className="!bg-[#FF735C] hover:!bg-[#e55a43] !border-none !font-bold !h-10 !px-6"
             >
-              Save Changes
+              Save Profile Changes
+            </Button>
+          </div>
+        </Form>
+      </Card>
+
+      {/* Change Password Card */}
+      <Card title={<div className="flex items-center gap-2 text-slate-800 font-bold"><KeyOutlined className="text-indigo-600" /> Change Account Password</div>} className="shadow-sm border-slate-100 rounded-2xl">
+        <Form form={passwordForm} layout="vertical" onFinish={onChangePassword}>
+          <Form.Item name="currentPassword" label="Current Password" rules={[{ required: true, message: "Please enter current password" }]}>
+            <Input.Password prefix={<LockOutlined className="text-slate-400" />} placeholder="Enter current password" />
+          </Form.Item>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Form.Item name="newPassword" label="New Password" rules={[{ required: true, message: "Please enter new password" }]}>
+              <Input.Password prefix={<LockOutlined className="text-slate-400" />} placeholder="Enter new password" />
+            </Form.Item>
+
+            <Form.Item name="confirmPassword" label="Confirm New Password" rules={[{ required: true, message: "Please confirm new password" }]}>
+              <Input.Password prefix={<LockOutlined className="text-slate-400" />} placeholder="Confirm new password" />
+            </Form.Item>
+          </div>
+
+          <div className="flex justify-end mt-4">
+            <Button
+              type="primary"
+              htmlType="submit"
+              loading={pwdSubmitting}
+              className="!bg-indigo-600 hover:!bg-indigo-700 !font-bold !h-10 !px-6"
+            >
+              Update Password
             </Button>
           </div>
         </Form>

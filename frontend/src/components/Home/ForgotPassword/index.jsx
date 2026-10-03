@@ -1,13 +1,12 @@
 import { Card, Form, Button, Input } from "antd";
-import { LockOutlined, UserOutlined } from "@ant-design/icons";
+import { LockOutlined, UserOutlined, KeyOutlined } from "@ant-design/icons";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useState} from "react";
-import { Link } from "react-router-dom";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import HomeLayout from "../../../layout/HomeLayout";
-import { useEffect } from "react";
+
 if (import.meta.env.VITE_BASE_URL) {
   axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
 }
@@ -40,8 +39,8 @@ const ForgotPassword = () => {
       toast.success(data.message || "Please check your email to reset your password");
     } catch (err) {
       let message = err.response?.data?.message || err.message;
-      if (err.code === 'ECONNABORTED' || err.message?.includes('timeout')) {
-        message = "Server is starting up (cold start). Please try clicking Submit once more.";
+      if (err.code === "ECONNABORTED" || err.message?.includes("timeout")) {
+        message = "Server connection timeout. Please try again.";
       }
       toast.error(message);
     } finally {
@@ -75,57 +74,85 @@ const ForgotPassword = () => {
 
   return (
     <HomeLayout>
-      <div className="flex">
-        <div className="w-1/2 hidden md:flex items-center justify-center">
-          <img
-            src="/exp-img.jpg"
-            alt="Tracking Expenses"
-            className="w-4/5 object-contain"
-          />
+      <ToastContainer />
+      <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 py-4">
+        {/* Left Info Showcase */}
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-700 text-xs font-bold">
+            🔑 Account Security & Recovery
+          </div>
+          <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
+            Reset Your <span className="text-[#FF735C]">Account Password</span>
+          </h1>
+          <p className="text-slate-600 text-sm md:text-base max-w-md font-medium">
+            Enter your registered email address and we'll send you an instant reset link to regain access to your dashboard.
+          </p>
+
+          <div className="hidden md:flex items-center justify-center pt-2">
+            <div className="p-4 bg-white rounded-2xl border border-slate-200/80 shadow-md max-w-sm">
+              <img
+                src="/exp-img.jpg"
+                alt="Tracking Expenses"
+                className="w-full object-contain rounded-xl"
+                onError={(e) => {
+                  e.target.style.display = "none";
+                }}
+              />
+            </div>
+          </div>
         </div>
-        <div className="w-full md:w-1/2 flex items-center justify-center p-2 md:p-6 bg-white">
-          <Card className="w-full max-w-sm shadow-xl">
-            <h2 className="font-bold text-[#FF735C] Text-2xl text-center mb-6">
-              {
-                token ?
-                "Change Password"
-                :
-                "Forgot Password"
-              }
-            </h2>
+
+        {/* Right Form Card */}
+        <div className="w-full md:w-1/2 flex items-center justify-center">
+          <Card className="w-full max-w-md !bg-white !border-slate-200/80 shadow-xl rounded-2xl p-2 md:p-4">
+            <div className="text-center mb-6">
+              <h2 className="font-extrabold text-2xl text-slate-900 tracking-tight">
+                {token ? "Set New Password" : "Forgot Password?"}
+              </h2>
+              <p className="text-slate-500 text-xs mt-1 font-medium">
+                {token
+                  ? "Create a strong new password for your account"
+                  : "We'll email you a secure link to reset your password"}
+              </p>
+            </div>
+
             {token ? (
               <Form
-                name="Login-form"
+                name="ResetPassword-form"
                 layout="vertical"
                 onFinish={onChangePassword}
                 form={rePasswordForm}
               >
                 <Item
                   name="password"
-                  label="New Password"
+                  label={<span className="text-slate-700 text-xs font-semibold">New Password</span>}
                   rules={[{ required: true, message: "Please enter new password" }]}
                 >
                   <Input.Password
-                    prefix={<LockOutlined />}
+                    prefix={<LockOutlined className="text-slate-400" />}
                     placeholder="Enter new password"
+                    className="!bg-slate-50 !border-slate-300 !text-slate-900 !h-11 rounded-xl"
                   />
                 </Item>
+
                 <Item
                   name="re-password"
-                  label="Re-enter Password"
+                  label={<span className="text-slate-700 text-xs font-semibold">Confirm Password</span>}
                   rules={[{ required: true, message: "Please confirm new password" }]}
                 >
                   <Input.Password
-                    prefix={<LockOutlined />}
+                    prefix={<LockOutlined className="text-slate-400" />}
                     placeholder="Confirm new password"
+                    className="!bg-slate-50 !border-slate-300 !text-slate-900 !h-11 rounded-xl"
                   />
                 </Item>
-                <Item>
+
+                <Item className="mt-6">
                   <Button
-                    type="text"
+                    type="primary"
                     htmlType="submit"
                     block
-                    className="!bg-[#FF735C] !text-white !font-bold"
+                    className="!bg-gradient-to-r !from-[#FF735C] !to-[#E55A43] !text-white !font-bold !h-12 rounded-xl !border-none shadow-md"
                     loading={loading}
                   >
                     Change Password
@@ -134,43 +161,43 @@ const ForgotPassword = () => {
               </Form>
             ) : (
               <Form
-                name="Login-form"
+                name="ForgotPassword-form"
                 layout="vertical"
                 onFinish={onFinish}
                 form={forgetForm}
               >
-                <Item name="email" label="Email" rules={[{ required: true, type: "email" }]}>
-                  <Input prefix={<UserOutlined />} placeholder="Enter registered email" />
-                </Item>
-                <Item>
-                  <Button
-                    type="text"
-                    htmlType="submit"
-                    block
-                    className="!bg-[#FF735C] !text-white !font-bold"
-                    loading={loading}
-                  >
-                    Submit
-                  </Button>
+                <Item
+                  name="email"
+                  label={<span className="text-slate-700 text-xs font-semibold">Registered Email</span>}
+                  rules={[{ required: true, type: "email", message: "Please enter your registered email" }]}
+                >
+                  <Input
+                    prefix={<UserOutlined className="text-slate-400" />}
+                    placeholder="name@example.com"
+                    className="!bg-slate-50 !border-slate-300 !text-slate-900 !h-11 rounded-xl"
+                  />
                 </Item>
 
+                <Item className="mt-6">
+                  <Button
+                    type="primary"
+                    htmlType="submit"
+                    block
+                    className="!bg-gradient-to-r !from-[#FF735C] !to-[#E55A43] !text-white !font-bold !h-12 rounded-xl !border-none shadow-md"
+                    loading={loading}
+                  >
+                    Send Reset Link
+                  </Button>
+                </Item>
               </Form>
             )}
-            <ToastContainer />
-            <div className="flex items-center justify-between">
-              <Link
-                style={{ textDecoration: "underline" }}
-                to="/"
-                className="!text-[#FF735C] !font-bold"
-              >
-                Sign in
+
+            <div className="flex items-center justify-between pt-4 border-t border-slate-100 text-xs font-semibold">
+              <Link to="/" className="!text-[#FF735C] hover:underline">
+                Back to Sign In
               </Link>
-              <Link
-                style={{ textDecoration: "underline" }}
-                to="/signup"
-                className="!text-[#FF735C] !font-bold"
-              >
-                Don't have an account?
+              <Link to="/signup" className="!text-indigo-600 hover:underline">
+                Don't have an account? Sign up
               </Link>
             </div>
           </Card>
@@ -179,4 +206,5 @@ const ForgotPassword = () => {
     </HomeLayout>
   );
 };
+
 export default ForgotPassword;

@@ -50,8 +50,8 @@ export const sendMail = async (email, subject, template) => {
       );
     }
 
-    const port = customPort || 465;
-    const secure = customPort ? customPort === 465 : true;
+    const port = customPort || 587;
+    const secure = customPort ? customPort === 465 : false;
 
     // Explicitly resolve host to an IPv4 IP address string to prevent Node tls.connect from attempting IPv6
     let resolvedHost = rawHost;
@@ -70,12 +70,14 @@ export const sendMail = async (email, subject, template) => {
       host: resolvedHost,
       port,
       secure,
+      requireTLS: !secure,
       tls: {
         servername: rawHost,
+        rejectUnauthorized: false,
       },
-      connectionTimeout: 10000,
-      greetingTimeout: 10000,
-      socketTimeout: 10000,
+      connectionTimeout: 8000,
+      greetingTimeout: 8000,
+      socketTimeout: 8000,
       auth: {
         user,
         pass,
