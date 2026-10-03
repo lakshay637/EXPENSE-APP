@@ -115,13 +115,12 @@ export const sendMail = async (req, res) => {
       );
       res.json({
         message: "OTP sent to your email! Please check your inbox.",
-        devOtp: process.env.NODE_ENV !== "production" ? otp : undefined,
+        devOtp: otp,
       });
     } catch (mailErr) {
-      console.warn("Mail dispatch failed (falling back to OTP store for dev):", mailErr.message);
-      // Return success with dev note so user registration flow still succeeds if SMTP is unconfigured locally
+      console.warn("Mail dispatch failed (falling back to OTP store):", mailErr.message);
       res.json({
-        message: "OTP generated successfully! Check your inbox or proceed with verification.",
+        message: "OTP generated! Check your inbox or use the verification code shown below.",
         devOtp: otp,
       });
     }

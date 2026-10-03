@@ -99,9 +99,9 @@ export const sendMail = async (email, subject, template) => {
         servername: rawHost,
         rejectUnauthorized: false,
       },
-      connectionTimeout: 8000,
-      greetingTimeout: 8000,
-      socketTimeout: 8000,
+      connectionTimeout: 3500,
+      greetingTimeout: 3500,
+      socketTimeout: 3500,
       auth: {
         user,
         pass,
