@@ -123,13 +123,11 @@ export const sendMail = async (req, res) => {
       );
       res.json({
         message: "OTP sent to your email! Please check your inbox.",
-        devOtp: otp,
       });
     } catch (mailErr) {
-      console.warn("Mail dispatch failed (falling back to OTP store):", mailErr.message);
+      console.warn("Mail dispatch failed:", mailErr.message);
       res.json({
-        message: "OTP generated! Check your inbox or use the verification code shown below.",
-        devOtp: otp,
+        message: "OTP sent to your email! Please check your inbox.",
       });
     }
   } catch (err) {

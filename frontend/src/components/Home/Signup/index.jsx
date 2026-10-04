@@ -23,7 +23,6 @@ const Signup = () => {
   
   const [step, setStep] = useState("form"); // "form" | "otp"
   const [formValues, setFormValues] = useState(null);
-  const [serverOtpHint, setServerOtpHint] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const sendOtp = async (values) => {
@@ -33,13 +32,7 @@ const Signup = () => {
       setStep("otp");
 
       const { data } = await axios.post("/api/user/send-mail", values);
-
-      if (data.devOtp) {
-        setServerOtpHint(data.devOtp);
-        otpForm.setFieldsValue({ otp: data.devOtp });
-      }
-
-      toast.success(data.message || "OTP generated! Please check your inbox or use the code below.");
+      toast.success(data.message || "OTP sent to your email! Please check your inbox.");
     } catch (error) {
       const msg =
         error.response?.data?.message || error.message || "Failed to send OTP";
@@ -223,21 +216,6 @@ const Signup = () => {
                   <div className="inline-flex items-center gap-1.5 text-xs text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200 font-semibold">
                     <CheckCircleOutlined /> Verification code sent to {formValues?.email}
                   </div>
-
-                  {serverOtpHint && (
-                    <div className="bg-slate-50 border border-slate-200 p-2.5 rounded-xl space-y-1">
-                      <span className="text-xs text-slate-600 font-medium block">
-                        Verification Code (Auto-Detected): <strong className="text-emerald-600 font-mono text-sm tracking-wider">{serverOtpHint}</strong>
-                      </span>
-                      <button
-                        type="button"
-                        onClick={() => otpForm.setFieldsValue({ otp: serverOtpHint })}
-                        className="text-[11px] text-indigo-600 hover:text-indigo-800 font-bold underline cursor-pointer"
-                      >
-                        ⚡ Click here to auto-fill "{serverOtpHint}"
-                      </button>
-                    </div>
-                  )}
 
                   <button
                     type="button"
