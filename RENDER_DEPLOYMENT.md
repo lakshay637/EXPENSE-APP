@@ -40,7 +40,7 @@ This repository is pre-configured with a `render.yaml` Blueprint specification f
 ### Frontend Environment Variable:
 | Variable Key | Description / Example |
 | :--- | :--- |
-| `VITE_BASE_URL` | The live URL of your deployed Backend Web Service (e.g., `https://expense-tracker-backend.onrender.com`) |
+| `VITE_BASE_URL` | The live URL of your deployed Backend Web Service (e.g., `https://expense-backend.onrender.com`) |
 
 6. Click **Apply**. Render will automatically build and launch both services!
 

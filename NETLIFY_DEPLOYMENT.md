@@ -50,7 +50,7 @@ Go to **Site Configuration** ➔ **Environment Variables** (or **Add variables**
 
 | Variable Name | Value / Description | Example |
 | :--- | :--- | :--- |
-| `VITE_BASE_URL` | Live Backend API URL (or empty `""` if using Netlify Functions) | `https://expense-tracker-backend.onrender.com` |
+| `VITE_BASE_URL` | Live Backend API URL (or empty `""` if using Netlify Functions) | `https://expense-backend.onrender.com` |
 | `DB_URL` | MongoDB Atlas Connection URI | `mongodb+srv://user:pass@cluster.mongodb.net/expense-tracker` |
 | `AUTH_SECRET` | Secret key for signing JWT user tokens | `your_random_jwt_secret_key` |
 | `FORGOT_TOKEN_SECRET` | Secret key for password reset tokens | `your_random_forgot_secret_key` |
