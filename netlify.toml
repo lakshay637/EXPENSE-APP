@@ -12,12 +12,11 @@
   directory = "../netlify/functions"
   node_bundler = "esbuild"
 
-# Redirect /api calls directly to Render Live Backend Web Service
+# Redirect /api calls to Netlify Serverless Functions (Native All-in-One Setup)
 [[redirects]]
   from = "/api/*"
-  to = "https://expense-tracker-backend.onrender.com/api/:splat"
+  to = "/.netlify/functions/api/:splat"
   status = 200
-  force = true
 
 # Single Page Application (SPA) Fallback for React Router v7
 [[redirects]]

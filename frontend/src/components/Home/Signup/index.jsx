@@ -29,9 +29,10 @@ const Signup = () => {
   const sendOtp = async (values) => {
     try {
       setLoading(true);
-      const { data } = await axios.post("/api/user/send-mail", values);
       setFormValues(values);
       setStep("otp");
+
+      const { data } = await axios.post("/api/user/send-mail", values);
 
       if (data.devOtp) {
         setServerOtpHint(data.devOtp);

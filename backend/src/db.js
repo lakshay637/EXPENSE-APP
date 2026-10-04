@@ -2,19 +2,18 @@ import mongoose from "mongoose";
 
 let isConnected = false;
 
+const DEFAULT_DB_URL = "mongodb+srv://lakshayb211_db_user:vNHxUJiRoy0W9S6u@cluster0.r1tqjew.mongodb.net/expense-tracker?retryWrites=true&w=majority";
+
 export const connectDB = async () => {
   if (isConnected || mongoose.connection.readyState === 1) {
     isConnected = true;
     return true;
   }
 
-  if (!process.env.DB_URL) {
-    console.error("❌ DB_URL environment variable is missing.");
-    return false;
-  }
+  const dbUrl = process.env.DB_URL?.trim() || DEFAULT_DB_URL;
 
   try {
-    const db = await mongoose.connect(process.env.DB_URL, {
+    const db = await mongoose.connect(dbUrl, {
       serverSelectionTimeoutMS: 5000,
       connectTimeoutMS: 5000,
     });
