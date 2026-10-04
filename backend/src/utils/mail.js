@@ -72,21 +72,32 @@ export const sendMail = async (email, subject, template) => {
     const port = customPort || 465;
     const secure = customPort ? customPort === 465 : true;
 
-    const transporter = nodemailer.createTransport({
-      host: rawHost,
-      port,
-      secure,
-      tls: {
-        rejectUnauthorized: false,
-      },
-      connectionTimeout: 10000,
-      greetingTimeout: 10000,
-      socketTimeout: 10000,
-      auth: {
-        user,
-        pass,
-      },
-    });
+    const isGmail = rawHost.includes("gmail") || user.endsWith("@gmail.com");
+    const transportConfig = isGmail
+      ? {
+          service: "gmail",
+          auth: {
+            user,
+            pass,
+          },
+        }
+      : {
+          host: rawHost,
+          port,
+          secure,
+          tls: {
+            rejectUnauthorized: false,
+          },
+          connectionTimeout: 10000,
+          greetingTimeout: 10000,
+          socketTimeout: 10000,
+          auth: {
+            user,
+            pass,
+          },
+        };
+
+    const transporter = nodemailer.createTransport(transportConfig);
 
     const info = await transporter.sendMail({
       from: `Expense Tracker <${from}>`,
