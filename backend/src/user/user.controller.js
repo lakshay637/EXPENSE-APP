@@ -37,12 +37,16 @@ export const createUser = async (req, res) => {
     }
 
     const cleanEmail = email.trim();
-    const existing = await UserModel.findOne({
-      email: new RegExp(`^${cleanEmail}$`, "i"),
-    });
+    try {
+      const existing = await UserModel.findOne({
+        email: new RegExp(`^${cleanEmail}$`, "i"),
+      }).maxTimeMS(3000);
 
-    if (existing) {
-      return res.status(409).json({ message: "Email already registered" });
+      if (existing) {
+        return res.status(409).json({ message: "Email already registered" });
+      }
+    } catch (dbErr) {
+      console.warn("DB lookup warning in createUser:", dbErr.message);
     }
 
     // Verify OTP if provided or required
@@ -96,12 +100,16 @@ export const sendMail = async (req, res) => {
     }
 
     const cleanEmail = email.trim();
-    const existing = await UserModel.findOne({
-      email: new RegExp(`^${cleanEmail}$`, "i"),
-    });
+    try {
+      const existing = await UserModel.findOne({
+        email: new RegExp(`^${cleanEmail}$`, "i"),
+      }).maxTimeMS(3000);
 
-    if (existing) {
-      return res.status(409).json({ message: "Email already registered" });
+      if (existing) {
+        return res.status(409).json({ message: "Email already registered" });
+      }
+    } catch (dbErr) {
+      console.warn("DB lookup warning in sendMail:", dbErr.message);
     }
 
     const otp = generateOTP();

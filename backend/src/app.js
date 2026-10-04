@@ -40,6 +40,14 @@ app.use(morgan('dev'));
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ limit: "10mb", extended: false }));
 
+app.get("/", (req, res) => {
+  res.send("Expense Tracker API Server Running!");
+});
+
+app.get("/api/health", (req, res) => {
+  res.json({ status: "OK", timestamp: new Date().toISOString() });
+});
+
 app.use("/api/user", userRouter);
 app.use("/api/expense", expenseRouter);
 
