@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 
+mongoose.set("bufferCommands", false);
+
 let isConnected = false;
 
 const DEFAULT_DB_URL = "mongodb+srv://lakshayb211_db_user:vNHxUJiRoy0W9S6u@cluster0.r1tqjew.mongodb.net/expense-tracker?retryWrites=true&w=majority";

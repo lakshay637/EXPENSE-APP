@@ -57,6 +57,8 @@ export const createUser = async (req, res) => {
       }
     }
 
+    await connectDB();
+
     const userData = {
       fullname,
       email: cleanEmail,
