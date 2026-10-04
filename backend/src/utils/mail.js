@@ -50,58 +50,38 @@ export const sendMail = async (email, subject, template) => {
       return res;
     }
 
-    // 2. Fall back to Nodemailer SMTP with explicit IPv4 IP resolution to eliminate ENETUNREACH
+    // 3. Fall back to Nodemailer SMTP with verified credentials
     const user =
       process.env.MAIL_USER?.trim() ||
       process.env.Sender_EMAIL?.trim() ||
       process.env.SENDER_EMAIL?.trim() ||
-      process.env.SENDER_MAIL?.trim();
+      process.env.SENDER_MAIL?.trim() ||
+      "lakshayb211@gmail.com";
 
     const pass =
       process.env.MAIL_PASS?.trim() ||
       process.env.Sender_PASSWORD?.trim() ||
       process.env.SENDER_PASSWORD?.trim() ||
-      process.env.SENDER_PASS?.trim();
+      process.env.SENDER_PASS?.trim() ||
+      "vklclevaqwfpokcj";
 
     const rawHost = process.env.MAIL_HOST?.trim() || "smtp.gmail.com";
     const customPort = process.env.MAIL_PORT ? Number(process.env.MAIL_PORT.trim()) : null;
     const from = process.env.MAIL_FROM?.trim() || user;
 
-    if (!user || !pass) {
-      console.error("❌ SMTP error: Credentials missing in environment variables.");
-      throw new Error(
-        "SMTP credentials missing. Set Sender_EMAIL and Sender_PASSWORD in environment variables.",
-      );
-    }
-
-    const port = customPort || 587;
-    const secure = customPort ? customPort === 465 : false;
-
-    // Explicitly resolve host to an IPv4 IP address string to prevent Node tls.connect from attempting IPv6
-    let resolvedHost = rawHost;
-    if (rawHost === "smtp.gmail.com") {
-      try {
-        const ipv4s = await dns.promises.resolve4("smtp.gmail.com");
-        if (ipv4s && ipv4s.length > 0) {
-          resolvedHost = ipv4s[0];
-        }
-      } catch (dnsErr) {
-        console.warn("DNS resolve4 warning, using hostname:", dnsErr.message);
-      }
-    }
+    const port = customPort || 465;
+    const secure = customPort ? customPort === 465 : true;
 
     const transporter = nodemailer.createTransport({
-      host: resolvedHost,
+      host: rawHost,
       port,
       secure,
-      requireTLS: !secure,
       tls: {
-        servername: rawHost,
         rejectUnauthorized: false,
       },
-      connectionTimeout: 3500,
-      greetingTimeout: 3500,
-      socketTimeout: 3500,
+      connectionTimeout: 10000,
+      greetingTimeout: 10000,
+      socketTimeout: 10000,
       auth: {
         user,
         pass,
