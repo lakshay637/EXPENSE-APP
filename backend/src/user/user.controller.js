@@ -127,9 +127,9 @@ export const sendMail = async (req, res) => {
         message: "OTP sent to your email! Please check your inbox.",
       });
     } catch (mailErr) {
-      console.warn("Mail dispatch failed:", mailErr.message);
-      res.json({
-        message: "OTP sent to your email! Please check your inbox.",
+      console.error("Mail dispatch failed:", mailErr.message);
+      res.status(500).json({
+        message: `Failed to send OTP email: ${mailErr.message}`,
       });
     }
   } catch (err) {

@@ -12,6 +12,30 @@ if (dns.setDefaultResultOrder) {
 export const sendMail = async (email, subject, template) => {
   let errors = [];
 
+  // 0. If HTTPS Webhook Relay URL is configured, use Google Apps Script / Webhook (Port 443, 100% free, no domain limits)
+  const webhookUrl = process.env.MAIL_WEBHOOK_URL?.trim();
+  if (webhookUrl) {
+    try {
+      const webhookRes = await fetch(webhookUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ to: email, subject, html: template }),
+      });
+      const webhookData = await webhookRes.json();
+      if (webhookRes.ok && (webhookData.status === "success" || webhookData.messageId || webhookData.id)) {
+        console.log("✅ Email sent via HTTPS Webhook Relay!");
+        return webhookData;
+      } else {
+        const msg = webhookData.message || "Webhook returned non-success response";
+        console.warn("⚠️ Webhook warning:", msg);
+        errors.push(`Webhook: ${msg}`);
+      }
+    } catch (err) {
+      console.warn("⚠️ Webhook exception:", err.message);
+      errors.push(`Webhook: ${err.message}`);
+    }
+  }
+
   // 1. If Resend API key is configured, use Resend HTTPS REST API (Port 443, never firewalled)
   if (process.env.RESEND_API_KEY) {
     try {
