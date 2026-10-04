@@ -1,22 +1,15 @@
 # Netlify Deployment Configuration for Expense App
 
 [build]
-  # Subfolder containing frontend React application
-  base = "frontend"
-  # Build command executed in the base directory
-  command = "npm run build"
-  # Output directory for production build assets
-  publish = "dist"
+  command = "npm --prefix frontend install && npm --prefix frontend run build"
+  publish = "frontend/dist"
 
-[functions]
-  directory = "../netlify/functions"
-  node_bundler = "esbuild"
-
-# Redirect /api calls to Netlify Serverless Functions (Native All-in-One Setup)
+# Redirect /api calls directly to Render Live Backend Web Service
 [[redirects]]
   from = "/api/*"
-  to = "/.netlify/functions/api/:splat"
+  to = "https://expense-tracker-backend.onrender.com/api/:splat"
   status = 200
+  force = true
 
 # Single Page Application (SPA) Fallback for React Router v7
 [[redirects]]
